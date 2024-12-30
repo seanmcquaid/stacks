@@ -91,7 +91,7 @@
     "is-ci": "^4.1.0",
     "jsdom": "^25.0.1",
     "lighthouse": "^12.3.0",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "msw": "^2.7.0",
     "playwright-lighthouse": "^4.0.0",
     "playwright-msw": "^3.0.1",
