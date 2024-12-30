@@ -67,7 +67,7 @@
     "@vitest/coverage-istanbul": "^2.1.8",
     "@vitest/eslint-plugin": "^1.1.21",
     "autoprefixer": "^10.4.20",
-    "babel-plugin-react-compiler": "19.0.0-beta-b2e8e9c-20241220",
+    "babel-plugin-react-compiler": "19.0.0-beta-55955c9-20241229",
     "bundlesize": "^0.18.2",
     "cross-env": "^7.0.3",
     "cross-fetch": "^4.1.0",

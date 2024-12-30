@@ -148,8 +148,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       babel-plugin-react-compiler:
-        specifier: 19.0.0-beta-b2e8e9c-20241220
-        version: 19.0.0-beta-b2e8e9c-20241220
+        specifier: 19.0.0-beta-55955c9-20241229
+        version: 19.0.0-beta-55955c9-20241229
       bundlesize:
         specifier: ^0.18.2
         version: 0.18.2
@@ -2386,8 +2386,8 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
 
-  babel-plugin-react-compiler@19.0.0-beta-b2e8e9c-20241220:
-    resolution: {integrity: sha512-aigv5VrOTLUOCeq/t1fuZvvs9Ze1GUfxnleWfiGoZcR0Lo34w3JcGgNiJBoxqlWfFiVnZhzaja9Aa1p6PWAtPg==}
+  babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229:
+    resolution: {integrity: sha512-APpa9fRiG5UN5kxnB/vznaSBKbXwAWZs6QshN3MLntzWa4cUhOxzUSd7Ohmr5sLQaM0ZHjjOg07pw1ZoR7+Oog==}
 
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
@@ -8846,7 +8846,7 @@ snapshots:
       cosmiconfig: 7.1.0
       resolve: 1.22.10
 
-  babel-plugin-react-compiler@19.0.0-beta-b2e8e9c-20241220:
+  babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229:
     dependencies:
       '@babel/types': 7.26.3
 
