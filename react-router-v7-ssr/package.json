@@ -42,7 +42,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
-    "react-i18next": "^15.3.0",
+    "react-i18next": "^15.4.0",
     "react-router": "^7.1.1",
     "remix-i18next": "^7.0.1",
     "tailwind-merge": "^2.6.0",
