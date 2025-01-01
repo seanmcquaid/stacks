@@ -20,7 +20,7 @@ import PageError from './components/app/PageError';
 import useAppTranslation from './hooks/useAppTranslation';
 import LoadingOverlay from './components/ui/LoadingOverlay';
 import i18next from './i18n/i18next.server';
-import setAcceptLanguageHeaders from './i18n/setAcceptLanguageHeaders';
+import setAcceptLanguageHeaders from './i18n/setAcceptLanguageHeaders.server';
 import type { Route } from './+types/root';
 
 export const links: Route.LinksFunction = () => [
