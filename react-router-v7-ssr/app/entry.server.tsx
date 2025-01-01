@@ -8,7 +8,7 @@ import { I18nextProvider, initReactI18next } from 'react-i18next';
 import Backend from 'i18next-fs-backend/cjs';
 import server from '../mocks/server';
 import i18next from './i18n/i18next.server';
-import i18n from './i18n/config';
+import i18n from './i18n/i18nConfig';
 import 'dotenv/config';
 import serverEnv from './env.server';
 

@@ -1,9 +1,10 @@
 import { HydratedRouter } from 'react-router/dom';
 import { startTransition, StrictMode } from 'react';
 import { hydrateRoot } from 'react-dom/client';
-import initializeApp from './initializeApp.client';
+import prepareMsw from './utils/testing/prepareMsw.client';
+import '@/i18n/i18next.client';
 
-initializeApp().then(() =>
+prepareMsw().then(() =>
   startTransition(() => {
     hydrateRoot(
       document,

@@ -1,6 +1,6 @@
 import Backend from 'i18next-fs-backend/cjs';
 import { RemixI18Next } from 'remix-i18next/server';
-import config from './config';
+import config from './i18nConfig';
 
 const i18next = new RemixI18Next({
   detection: {
