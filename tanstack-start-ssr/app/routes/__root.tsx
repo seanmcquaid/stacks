@@ -1,13 +1,16 @@
 // app/routes/__root.tsx
+import { QueryClient } from '@tanstack/react-query'
 import {
     Outlet,
     ScrollRestoration,
-    createRootRoute,
+    createRootRouteWithContext,
   } from '@tanstack/react-router'
   import { Meta, Scripts } from '@tanstack/start'
   import type { ReactNode } from 'react'
   
-  export const Route = createRootRoute({
+  export const Route = createRootRouteWithContext<{
+    queryClient: QueryClient
+  }>()({
     head: () => ({
       meta: [
         {

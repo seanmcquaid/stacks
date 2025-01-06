@@ -12,7 +12,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@tanstack/react-query": "^5.62.15",
     "@tanstack/react-router": "^1.95.1",
+    "@tanstack/react-router-with-query": "^1.95.1",
     "@tanstack/start": "^1.95.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
