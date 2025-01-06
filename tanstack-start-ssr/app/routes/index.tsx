@@ -1,10 +1,10 @@
-import { createLazyFileRoute } from '@tanstack/react-router';
-import PageWrapper from '@/components/app/PageWrapper';
-import LinkButton from '@/components/ui/LinkButton';
-import useAppTranslation from '@/hooks/useAppTranslation';
+import { createFileRoute } from '@tanstack/react-router'
+import PageWrapper from '@/components/app/PageWrapper'
+import LinkButton from '@/components/ui/LinkButton'
+import useAppTranslation from '@/hooks/useAppTranslation'
 
 const HomePage = () => {
-  const { t } = useAppTranslation();
+  const { t } = useAppTranslation()
 
   return (
     <PageWrapper>
@@ -20,9 +20,9 @@ const HomePage = () => {
         {t('HomePage.kitchenSink')}
       </LinkButton>
     </PageWrapper>
-  );
-};
+  )
+}
 
-export const Route = createLazyFileRoute('/')({
+export const Route = createFileRoute('/')({
   component: HomePage,
-});
+})

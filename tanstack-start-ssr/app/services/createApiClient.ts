@@ -1,4 +1,4 @@
-import ky from 'ky';
+import ky from "ky";
 
 const createApiClient = (baseUrl: string) => {
   return ky.create({
@@ -7,14 +7,14 @@ const createApiClient = (baseUrl: string) => {
       limit: 2,
       statusCodes: [401, 403, 500, 504],
       methods: [
-        'get',
-        'put',
-        'head',
-        'delete',
-        'options',
-        'trace',
-        'post',
-        'patch',
+        "get",
+        "put",
+        "head",
+        "delete",
+        "options",
+        "trace",
+        "post",
+        "patch",
       ],
     },
     hooks: {
@@ -35,7 +35,7 @@ const createApiClient = (baseUrl: string) => {
               }),
               {
                 status: 422,
-                statusText: 'API Validation Error',
+                statusText: "API Validation Error",
               },
             );
           }
@@ -44,7 +44,7 @@ const createApiClient = (baseUrl: string) => {
         },
       ],
       beforeError: [
-        async error => {
+        async (error) => {
           try {
             const response = await error.response.json();
             error.responseData = response;

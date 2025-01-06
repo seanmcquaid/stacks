@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 const useOnUnmount = (fn: () => void): void => {
   const ref = useRef(fn);

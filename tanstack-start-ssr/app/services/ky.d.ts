@@ -1,6 +1,6 @@
-import type { ZodFirstPartySchemaTypes } from 'zod';
+import type { ZodFirstPartySchemaTypes } from "zod";
 
-declare module 'ky' {
+declare module "ky" {
   export interface Options {
     validationSchema?: ZodFirstPartySchemaTypes;
   }

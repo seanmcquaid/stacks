@@ -1,4 +1,9 @@
 // app.config.ts
-import { defineConfig } from '@tanstack/start/config'
+import { defineConfig } from "@tanstack/start/config";
+import tsConfigPaths from "vite-tsconfig-paths";
 
-export default defineConfig({})
+export default defineConfig({
+  vite: {
+    plugins: [tsConfigPaths()],
+  },
+});
