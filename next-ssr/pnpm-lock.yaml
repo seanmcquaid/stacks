@@ -97,8 +97,8 @@ importers:
         specifier: ^5.62.16
         version: 5.62.16(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
       '@tanstack/react-query-devtools':
-        specifier: ^5.62.11
-        version: 5.62.11(@tanstack/react-query@5.62.16(react@19.0.0))(react@19.0.0)
+        specifier: ^5.62.16
+        version: 5.62.16(@tanstack/react-query@5.62.16(react@19.0.0))(react@19.0.0)
       '@testing-library/jest-dom':
         specifier: ^6.6.3
         version: 6.6.3
@@ -1619,13 +1619,13 @@ packages:
   '@tanstack/query-core@5.62.16':
     resolution: {integrity: sha512-9Sgft7Qavcd+sN0V25xVyo0nfmcZXBuODy3FVG7BMWTg1HMLm8wwG5tNlLlmSic1u7l1v786oavn+STiFaPH2g==}
 
-  '@tanstack/query-devtools@5.62.9':
-    resolution: {integrity: sha512-b1NZzDLVf6laJsB1Cfm3ieuYzM+WqoO8qpm9v+3Etwd+Ph4zkhUMiT+wcWj5AhEPsXiRodKYiiW048VDNdBxNg==}
+  '@tanstack/query-devtools@5.62.16':
+    resolution: {integrity: sha512-3ff6UBJr0H3nIhfLSl9911rvKqXf0u4B58jl0uYdDWLqPk9pCvYIbxC35cGxK2+8INl4IaFVUHb/IdgWrNkg3Q==}
 
-  '@tanstack/react-query-devtools@5.62.11':
-    resolution: {integrity: sha512-i0vKgdM4ORRzqduz7UeUF52UhLrvRp4sNY/DnLsd5NqNyiKct3a0bLQMWE2fqjF5tEExQ0d0xY60ILXW/T62xA==}
+  '@tanstack/react-query-devtools@5.62.16':
+    resolution: {integrity: sha512-EjF0tgHnWYcqhk8KxGKnmGlYcnldhWjW3bbH2WZqxo7t41ytzkIQtZ/UyLph//YMmZZE/RVTmSo3rGq/EG9iCA==}
     peerDependencies:
-      '@tanstack/react-query': ^5.62.11
+      '@tanstack/react-query': ^5.62.16
       react: ^18 || ^19
 
   '@tanstack/react-query-next-experimental@5.62.16':
@@ -6076,11 +6076,11 @@ snapshots:
 
   '@tanstack/query-core@5.62.16': {}
 
-  '@tanstack/query-devtools@5.62.9': {}
+  '@tanstack/query-devtools@5.62.16': {}
 
-  '@tanstack/react-query-devtools@5.62.11(@tanstack/react-query@5.62.16(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-query-devtools@5.62.16(@tanstack/react-query@5.62.16(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@tanstack/query-devtools': 5.62.9
+      '@tanstack/query-devtools': 5.62.16
       '@tanstack/react-query': 5.62.16(react@19.0.0)
       react: 19.0.0
 
