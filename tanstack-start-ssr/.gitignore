@@ -39,3 +39,6 @@ stats.html
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+.output
+.vinxi
