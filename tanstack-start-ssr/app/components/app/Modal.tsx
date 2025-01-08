@@ -5,9 +5,9 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-} from "@/components/ui/Dialog";
-import { Button } from "@/components/ui/Button";
-import useAppTranslation from "@/hooks/useAppTranslation";
+} from '@/components/ui/Dialog';
+import { Button } from '@/components/ui/Button';
+import useAppTranslation from '@/hooks/useAppTranslation';
 
 interface ModalProps {
   title: string;
@@ -36,7 +36,7 @@ const Modal = ({
           <DialogDescription>{description}</DialogDescription>
           <DialogFooter>
             <Button onClick={handleOnConfirm}>{confirmButtonText}</Button>
-            <Button onClick={handleOnClose}>{t("Modal.close")}</Button>
+            <Button onClick={handleOnClose}>{t('Modal.close')}</Button>
           </DialogFooter>
         </DialogHeader>
       </DialogContent>

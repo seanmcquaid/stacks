@@ -10,12 +10,12 @@
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as IndexImport } from './routes/index'
-import { Route as ReactQueryIndexImport } from './routes/react-query/index'
-import { Route as ReactHookFormZodIndexImport } from './routes/react-hook-form-zod/index'
-import { Route as KitchenSinkIndexImport } from './routes/kitchen-sink/index'
-import { Route as ReactQueryIdIndexImport } from './routes/react-query/$id/index'
+import { Route as rootRoute } from './routes/__root';
+import { Route as IndexImport } from './routes/index';
+import { Route as ReactQueryIndexImport } from './routes/react-query/index';
+import { Route as ReactHookFormZodIndexImport } from './routes/react-hook-form-zod/index';
+import { Route as KitchenSinkIndexImport } from './routes/kitchen-sink/index';
+import { Route as ReactQueryIdIndexImport } from './routes/react-query/$id/index';
 
 // Create/Update Routes
 
@@ -23,132 +23,132 @@ const IndexRoute = IndexImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const ReactQueryIndexRoute = ReactQueryIndexImport.update({
   id: '/react-query/',
   path: '/react-query/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const ReactHookFormZodIndexRoute = ReactHookFormZodIndexImport.update({
   id: '/react-hook-form-zod/',
   path: '/react-hook-form-zod/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const KitchenSinkIndexRoute = KitchenSinkIndexImport.update({
   id: '/kitchen-sink/',
   path: '/kitchen-sink/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const ReactQueryIdIndexRoute = ReactQueryIdIndexImport.update({
   id: '/react-query/$id/',
   path: '/react-query/$id/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
     '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/';
+      path: '/';
+      fullPath: '/';
+      preLoaderRoute: typeof IndexImport;
+      parentRoute: typeof rootRoute;
+    };
     '/kitchen-sink/': {
-      id: '/kitchen-sink/'
-      path: '/kitchen-sink'
-      fullPath: '/kitchen-sink'
-      preLoaderRoute: typeof KitchenSinkIndexImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/kitchen-sink/';
+      path: '/kitchen-sink';
+      fullPath: '/kitchen-sink';
+      preLoaderRoute: typeof KitchenSinkIndexImport;
+      parentRoute: typeof rootRoute;
+    };
     '/react-hook-form-zod/': {
-      id: '/react-hook-form-zod/'
-      path: '/react-hook-form-zod'
-      fullPath: '/react-hook-form-zod'
-      preLoaderRoute: typeof ReactHookFormZodIndexImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/react-hook-form-zod/';
+      path: '/react-hook-form-zod';
+      fullPath: '/react-hook-form-zod';
+      preLoaderRoute: typeof ReactHookFormZodIndexImport;
+      parentRoute: typeof rootRoute;
+    };
     '/react-query/': {
-      id: '/react-query/'
-      path: '/react-query'
-      fullPath: '/react-query'
-      preLoaderRoute: typeof ReactQueryIndexImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/react-query/';
+      path: '/react-query';
+      fullPath: '/react-query';
+      preLoaderRoute: typeof ReactQueryIndexImport;
+      parentRoute: typeof rootRoute;
+    };
     '/react-query/$id/': {
-      id: '/react-query/$id/'
-      path: '/react-query/$id'
-      fullPath: '/react-query/$id'
-      preLoaderRoute: typeof ReactQueryIdIndexImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/react-query/$id/';
+      path: '/react-query/$id';
+      fullPath: '/react-query/$id';
+      preLoaderRoute: typeof ReactQueryIdIndexImport;
+      parentRoute: typeof rootRoute;
+    };
   }
 }
 
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/kitchen-sink': typeof KitchenSinkIndexRoute
-  '/react-hook-form-zod': typeof ReactHookFormZodIndexRoute
-  '/react-query': typeof ReactQueryIndexRoute
-  '/react-query/$id': typeof ReactQueryIdIndexRoute
+  '/': typeof IndexRoute;
+  '/kitchen-sink': typeof KitchenSinkIndexRoute;
+  '/react-hook-form-zod': typeof ReactHookFormZodIndexRoute;
+  '/react-query': typeof ReactQueryIndexRoute;
+  '/react-query/$id': typeof ReactQueryIdIndexRoute;
 }
 
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/kitchen-sink': typeof KitchenSinkIndexRoute
-  '/react-hook-form-zod': typeof ReactHookFormZodIndexRoute
-  '/react-query': typeof ReactQueryIndexRoute
-  '/react-query/$id': typeof ReactQueryIdIndexRoute
+  '/': typeof IndexRoute;
+  '/kitchen-sink': typeof KitchenSinkIndexRoute;
+  '/react-hook-form-zod': typeof ReactHookFormZodIndexRoute;
+  '/react-query': typeof ReactQueryIndexRoute;
+  '/react-query/$id': typeof ReactQueryIdIndexRoute;
 }
 
 export interface FileRoutesById {
-  __root__: typeof rootRoute
-  '/': typeof IndexRoute
-  '/kitchen-sink/': typeof KitchenSinkIndexRoute
-  '/react-hook-form-zod/': typeof ReactHookFormZodIndexRoute
-  '/react-query/': typeof ReactQueryIndexRoute
-  '/react-query/$id/': typeof ReactQueryIdIndexRoute
+  __root__: typeof rootRoute;
+  '/': typeof IndexRoute;
+  '/kitchen-sink/': typeof KitchenSinkIndexRoute;
+  '/react-hook-form-zod/': typeof ReactHookFormZodIndexRoute;
+  '/react-query/': typeof ReactQueryIndexRoute;
+  '/react-query/$id/': typeof ReactQueryIdIndexRoute;
 }
 
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
+  fileRoutesByFullPath: FileRoutesByFullPath;
   fullPaths:
     | '/'
     | '/kitchen-sink'
     | '/react-hook-form-zod'
     | '/react-query'
-    | '/react-query/$id'
-  fileRoutesByTo: FileRoutesByTo
+    | '/react-query/$id';
+  fileRoutesByTo: FileRoutesByTo;
   to:
     | '/'
     | '/kitchen-sink'
     | '/react-hook-form-zod'
     | '/react-query'
-    | '/react-query/$id'
+    | '/react-query/$id';
   id:
     | '__root__'
     | '/'
     | '/kitchen-sink/'
     | '/react-hook-form-zod/'
     | '/react-query/'
-    | '/react-query/$id/'
-  fileRoutesById: FileRoutesById
+    | '/react-query/$id/';
+  fileRoutesById: FileRoutesById;
 }
 
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  KitchenSinkIndexRoute: typeof KitchenSinkIndexRoute
-  ReactHookFormZodIndexRoute: typeof ReactHookFormZodIndexRoute
-  ReactQueryIndexRoute: typeof ReactQueryIndexRoute
-  ReactQueryIdIndexRoute: typeof ReactQueryIdIndexRoute
+  IndexRoute: typeof IndexRoute;
+  KitchenSinkIndexRoute: typeof KitchenSinkIndexRoute;
+  ReactHookFormZodIndexRoute: typeof ReactHookFormZodIndexRoute;
+  ReactQueryIndexRoute: typeof ReactQueryIndexRoute;
+  ReactQueryIdIndexRoute: typeof ReactQueryIdIndexRoute;
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -157,11 +157,11 @@ const rootRouteChildren: RootRouteChildren = {
   ReactHookFormZodIndexRoute: ReactHookFormZodIndexRoute,
   ReactQueryIndexRoute: ReactQueryIndexRoute,
   ReactQueryIdIndexRoute: ReactQueryIdIndexRoute,
-}
+};
 
 export const routeTree = rootRoute
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+  ._addFileTypes<FileRouteTypes>();
 
 /* ROUTE_MANIFEST_START
 {

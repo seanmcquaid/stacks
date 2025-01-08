@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 type SchemaType =
   | z.ZodObject<z.ZodRawShape>
@@ -28,7 +28,7 @@ const getValidatedFormData = <T extends SchemaType>({
   const formDataFromSchema = schemaKeys.reduce(
     (acc, key) => ({
       ...acc,
-      [key]: formData.get(key) ?? "",
+      [key]: formData.get(key) ?? '',
     }),
     {} as {
       [Key in keyof z.infer<T>]: string;

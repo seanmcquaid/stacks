@@ -1,7 +1,7 @@
-import type * as React from "react";
-import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDown } from "lucide-react";
-import { cn } from "@/utils/styles";
+import type * as React from 'react';
+import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import { ChevronDown } from 'lucide-react';
+import { cn } from '@/utils/styles';
 
 export const Accordion = AccordionPrimitive.Root;
 
@@ -11,9 +11,9 @@ export const AccordionItem = ({
 }: React.ComponentPropsWithRef<typeof AccordionPrimitive.Item> & {
   className?: string;
 }) => (
-  <AccordionPrimitive.Item className={cn("border-b", className)} {...props} />
+  <AccordionPrimitive.Item className={cn('border-b', className)} {...props} />
 );
-AccordionItem.displayName = "AccordionItem";
+AccordionItem.displayName = 'AccordionItem';
 
 export const AccordionTrigger = ({
   className,
@@ -25,7 +25,7 @@ export const AccordionTrigger = ({
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       className={cn(
-        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+        'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
         className,
       )}
       {...props}
@@ -46,7 +46,7 @@ export const AccordionContent = ({
 }) => (
   <AccordionPrimitive.Content
     className={cn(
-      "overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+      'overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
       className,
     )}
     {...props}

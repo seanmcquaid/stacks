@@ -1,10 +1,10 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import type { RenderResult } from "@testing-library/react";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import type { RenderResult } from '@testing-library/react';
 import {
   render as rtlRender,
   renderHook as rtlRenderHook,
-} from "@testing-library/react";
-import type { ReactElement, PropsWithChildren } from "react";
+} from '@testing-library/react';
+import type { ReactElement, PropsWithChildren } from 'react';
 
 const queryClient = new QueryClient();
 
@@ -24,6 +24,6 @@ const render = (ui: ReactElement): RenderResult => {
 };
 
 // re-export everything
-export * from "@testing-library/react";
+export * from '@testing-library/react';
 // override render method
 export { render, renderHook };
