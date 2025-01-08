@@ -1,9 +1,5 @@
 // app/routes/__root.tsx
-import PageWrapper from '@/components/app/PageWrapper';
-import { Button } from '@/components/ui/Button';
-import useAppTranslation from '@/hooks/useAppTranslation';
-import getLanguageFromReferer from '@/i18n/getLanguageFromReferer';
-import { QueryClient } from '@tanstack/react-query';
+import type { QueryClient } from '@tanstack/react-query';
 import {
   Outlet,
   ScrollRestoration,
@@ -12,6 +8,10 @@ import {
 } from '@tanstack/react-router';
 import { createServerFn, Meta, Scripts } from '@tanstack/start';
 import { lazy, type ReactNode } from 'react';
+import PageWrapper from '@/components/app/PageWrapper';
+import { Button } from '@/components/ui/Button';
+import useAppTranslation from '@/hooks/useAppTranslation';
+import getLanguageFromReferer from '@/i18n/getLanguageFromReferer';
 import '@/i18n/i18next';
 import appCss from '@/styles/index.css?url';
 
