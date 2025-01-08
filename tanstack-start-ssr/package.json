@@ -1,15 +1,23 @@
 {
   "name": "tanstack-start-ssr",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "license": "ISC",
-  "author": "",
   "type": "module",
   "scripts": {
     "build": "vinxi build",
     "dev": "vinxi dev",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "bundlesize": "bundlesize",
+    "lint": "eslint playwright src --max-warnings=0",
+    "playwright:codegen": "playwright codegen",
+    "playwright:debug": "playwright test --debug",
+    "playwright:run-e2e": "playwright test playwright/e2e",
+    "playwright:run-integration": "playwright test playwright/integration",
+    "playwright:ui": "playwright test --ui",
+    "prepare": "is-ci || husky",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
