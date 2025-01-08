@@ -76,3 +76,18 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 20
+  - package-ecosystem: npm
+    directory: "/tanstack-start-ssr"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 20
+  - package-ecosystem: github-actions
+    directory: "/tanstack-start-ssr/.github/workflows"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 20
+  - package-ecosystem: github-actions
+    directory: "/tanstack-start-ssr/.github/actions/setup-pull-request-job"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 20
