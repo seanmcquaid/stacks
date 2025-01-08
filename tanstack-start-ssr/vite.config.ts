@@ -35,7 +35,7 @@ const vitestConfig = defineVitestConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./app/utils/testing/setupTests.ts'],
-    exclude: ['playwright', 'node_modules'],
+    exclude: ['node_modules'],
     coverage: {
       provider: 'istanbul',
       reporter: ['lcov'],
