@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "path": "./.vinxi/build/client/_build/assets/*.js",
+      "path": "./.vinxi/build/client/_build/assets/!(worker)-**.js",
       "maxSize": "300 kB"
     }
   ]

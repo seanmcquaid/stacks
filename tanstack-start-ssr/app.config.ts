@@ -13,10 +13,5 @@ export default defineConfig({
         plugins: [tailwindcss, autoprefixer],
       },
     },
-    build: {
-      rollupOptions: {
-        external: id => id.includes('worker'),
-      },
-    },
   },
 });
