@@ -6,15 +6,18 @@ import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import i18next from 'eslint-plugin-i18next';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import noRelativeImportPaths from 'eslint-plugin-no-relative-import-paths';
 import playwright from 'eslint-plugin-playwright';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import vitest from '@vitest/eslint-plugin';
 import globals from 'globals';
-import reactCompiler from 'eslint-plugin-react-compiler';
 
 export default [
+  {
+    ignores: ['./src/routeTree.gen.ts'],
+  },
   js.configs.recommended,
   ...pluginQuery.configs['flat/recommended'],
   ...tseslint.configs.recommended,
@@ -25,7 +28,7 @@ export default [
   reactPlugin.configs.flat['jsx-runtime'],
   {
     ...vitest.configs.recommended,
-    files: ['app/**'],
+    files: ['src/**'],
   },
   {
     ...playwright.configs['flat/recommended'],
@@ -34,8 +37,8 @@ export default [
   {
     plugins: {
       import: fixupPluginRules(importPlugin),
+      'no-relative-import-paths': noRelativeImportPaths,
       'react-hooks': reactHooksPlugin,
-      'react-compiler': reactCompiler,
     },
     rules: {
       ...reactHooksPlugin.configs.recommended.rules,
@@ -70,7 +73,14 @@ export default [
       'playwright/missing-playwright-await': 'off',
       '@typescript-eslint/consistent-type-definitions': ['error'],
       '@typescript-eslint/consistent-type-imports': 'error',
-      'react-compiler/react-compiler': 'error',
+      'no-relative-import-paths/no-relative-import-paths': [
+        'warn',
+        {
+          allowSameFolder: true,
+          rootDir: 'src',
+          prefix: '@',
+        },
+      ],
     },
   },
 ];
