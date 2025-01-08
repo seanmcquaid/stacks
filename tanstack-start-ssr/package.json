@@ -7,7 +7,7 @@
     "dev": "vinxi dev",
     "start": "vinxi start",
     "bundlesize": "bundlesize",
-    "lint": "eslint playwright src --max-warnings=0",
+    "lint": "eslint playwright app --max-warnings=0",
     "playwright:codegen": "playwright codegen",
     "playwright:debug": "playwright test --debug",
     "playwright:run-e2e": "playwright test playwright/e2e",
