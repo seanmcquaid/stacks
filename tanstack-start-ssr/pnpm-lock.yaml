@@ -36,8 +36,8 @@ importers:
         specifier: ^1.95.2
         version: 1.95.2(@tanstack/react-query@5.63.0(react@19.0.0))(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/start':
-        specifier: ^1.95.1
-        version: 1.95.1(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
+        specifier: ^1.95.2
+        version: 1.95.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -2134,15 +2134,6 @@ packages:
       react: '>=18'
       react-dom: '>=18'
 
-  '@tanstack/router-generator@1.95.1':
-    resolution: {integrity: sha512-bUymh20C9AdtwLdZkgfx04S3N9yvm8S60xFFJu1dyYI7gn5g4aPSPYaQKYFmPhc+kQJ67ZbmWVkFBKHZ8YGYvA==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      '@tanstack/react-router': ^1.95.1
-    peerDependenciesMeta:
-      '@tanstack/react-router':
-        optional: true
-
   '@tanstack/router-generator@1.95.2':
     resolution: {integrity: sha512-X+D3clHDkBazn95ugyNugarSLWdOmaGtwUCERreSy11WtKK3KdOFymMGC7rAyshBTReVQ+15QQwWnSeOuCrLNA==}
     engines: {node: '>=12'}
@@ -2171,8 +2162,8 @@ packages:
     resolution: {integrity: sha512-dwfMgjPBszAc8sE0qBGx4VW/cwQ849KX3XgSb/hlwv/z4k+Ll2UpIkUxcpCxMSox423ZvIc6N+rByIU0xmP1zA==}
     engines: {node: '>=12'}
 
-  '@tanstack/start@1.95.1':
-    resolution: {integrity: sha512-zmnZHjoWFO39/uiT1onMEBod0iwFWwE2SV44iEKvb8lR4VWbnvSx6oY9CIo6FI9U8ZR4VEun1FdzsLP+eZ60aw==}
+  '@tanstack/start@1.95.2':
+    resolution: {integrity: sha512-O3NrwkohHAVgAOSKGmgPVv11TN46pAr/eC+663nlDebAxA7ggTEVvoimA2GpN5NGejRqiVK8SJGy0fR4upyMdg==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -8905,15 +8896,6 @@ snapshots:
     transitivePeerDependencies:
       - csstype
 
-  '@tanstack/router-generator@1.95.1(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
-    dependencies:
-      '@tanstack/virtual-file-routes': 1.87.6
-      prettier: 3.4.2
-      tsx: 4.19.2
-      zod: 3.24.1
-    optionalDependencies:
-      '@tanstack/react-router': 1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-
   '@tanstack/router-generator@1.95.2(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
     dependencies:
       '@tanstack/virtual-file-routes': 1.87.6
@@ -8970,11 +8952,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/start@1.95.1(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)':
+  '@tanstack/start@1.95.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)':
     dependencies:
       '@tanstack/react-cross-context': 1.87.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-router': 1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@tanstack/router-generator': 1.95.1(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
+      '@tanstack/router-generator': 1.95.2(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       '@tanstack/router-plugin': 1.95.2(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))
       '@tanstack/start-vite-plugin': 1.91.1
       '@vinxi/react': 0.2.5
