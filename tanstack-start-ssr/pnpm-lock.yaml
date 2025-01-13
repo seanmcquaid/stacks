@@ -24,17 +24,17 @@ importers:
         specifier: ^1.2.4
         version: 1.2.4(@types/react-dom@19.0.2(@types/react@19.0.6))(@types/react@19.0.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-query':
-        specifier: ^5.63.0
-        version: 5.63.0(react@19.0.0)
+        specifier: ^5.64.0
+        version: 5.64.0(react@19.0.0)
       '@tanstack/react-query-devtools':
         specifier: ^5.63.0
-        version: 5.63.0(@tanstack/react-query@5.63.0(react@19.0.0))(react@19.0.0)
+        version: 5.63.0(@tanstack/react-query@5.64.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-router':
         specifier: ^1.95.2
         version: 1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-router-with-query':
         specifier: ^1.95.5
-        version: 1.95.5(@tanstack/react-query@5.63.0(react@19.0.0))(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 1.95.5(@tanstack/react-query@5.64.0(react@19.0.0))(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/start':
         specifier: ^1.95.2
         version: 1.95.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
@@ -2085,8 +2085,8 @@ packages:
     resolution: {integrity: sha512-FgUauZLg+nRybH5dKyAYokmXs064rHc0qpMizKxTegSTMHj/z2B6T7pjEG2Zd6dBegeYNVL97ROg7Srr9cuBug==}
     engines: {node: '>=12'}
 
-  '@tanstack/query-core@5.62.16':
-    resolution: {integrity: sha512-9Sgft7Qavcd+sN0V25xVyo0nfmcZXBuODy3FVG7BMWTg1HMLm8wwG5tNlLlmSic1u7l1v786oavn+STiFaPH2g==}
+  '@tanstack/query-core@5.64.0':
+    resolution: {integrity: sha512-/MPJt/AaaMzdWJZTafgMyYhEX/lGjQrNz8+NDQSk8fNoU5PHqh05FhQaBrEQafW2PeBHsRbefEf//qKMiSAbQQ==}
 
   '@tanstack/query-devtools@5.62.16':
     resolution: {integrity: sha512-3ff6UBJr0H3nIhfLSl9911rvKqXf0u4B58jl0uYdDWLqPk9pCvYIbxC35cGxK2+8INl4IaFVUHb/IdgWrNkg3Q==}
@@ -2103,8 +2103,8 @@ packages:
       '@tanstack/react-query': ^5.63.0
       react: ^18 || ^19
 
-  '@tanstack/react-query@5.63.0':
-    resolution: {integrity: sha512-QWizLzSiog8xqIRYmuJRok9VELlXVBAwtINgVCgW1SNvamQwWDO5R0XFSkjoBEj53x9Of1KAthLRBUC5xmtVLQ==}
+  '@tanstack/react-query@5.64.0':
+    resolution: {integrity: sha512-tBMzlROROUcTDMpDt1NC3n9ndKnJHPB3RCpa6Bf9f31TFvqhLz879x8jldtKU+6IwMSw1Pn4K1AKA+2SYyA6TA==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -8848,7 +8848,7 @@ snapshots:
 
   '@tanstack/history@1.95.2': {}
 
-  '@tanstack/query-core@5.62.16': {}
+  '@tanstack/query-core@5.64.0': {}
 
   '@tanstack/query-devtools@5.62.16': {}
 
@@ -8857,20 +8857,20 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@tanstack/react-query-devtools@5.63.0(@tanstack/react-query@5.63.0(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-query-devtools@5.63.0(@tanstack/react-query@5.64.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@tanstack/query-devtools': 5.62.16
-      '@tanstack/react-query': 5.63.0(react@19.0.0)
+      '@tanstack/react-query': 5.64.0(react@19.0.0)
       react: 19.0.0
 
-  '@tanstack/react-query@5.63.0(react@19.0.0)':
+  '@tanstack/react-query@5.64.0(react@19.0.0)':
     dependencies:
-      '@tanstack/query-core': 5.62.16
+      '@tanstack/query-core': 5.64.0
       react: 19.0.0
 
-  '@tanstack/react-router-with-query@1.95.5(@tanstack/react-query@5.63.0(react@19.0.0))(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-router-with-query@1.95.5(@tanstack/react-query@5.64.0(react@19.0.0))(@tanstack/react-router@1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@tanstack/react-query': 5.63.0(react@19.0.0)
+      '@tanstack/react-query': 5.64.0(react@19.0.0)
       '@tanstack/react-router': 1.95.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
