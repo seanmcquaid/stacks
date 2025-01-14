@@ -106,8 +106,8 @@ importers:
         specifier: ^5.62.16
         version: 5.62.16(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3)
       '@tanstack/router-devtools':
-        specifier: ^1.95.2
-        version: 1.95.2(@tanstack/react-router@1.95.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(csstype@3.1.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^1.95.5
+        version: 1.95.5(@tanstack/react-router@1.95.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(csstype@3.1.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/router-plugin':
         specifier: ^1.95.6
         version: 1.95.6(@tanstack/react-router@1.95.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(vite@6.0.7(@types/node@22.10.5)(jiti@1.21.7)(tsx@4.19.2)(yaml@2.6.1))
@@ -1778,11 +1778,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@tanstack/router-devtools@1.95.2':
-    resolution: {integrity: sha512-hq4HFWHwCVlkbF+qR3pGllmameCVde499mpgxDu+onc271US9h7VvDuOzl0fJy34aKgPyBoTYJYbAb0MxVR5uw==}
+  '@tanstack/router-devtools@1.95.5':
+    resolution: {integrity: sha512-i6wzj3o8Qn1ZODgAYnOTHnVL9h0x1cYD3pzIXLunkhjhyUwECUhBow83gXsTxO/T7D1YFsuQj59TXaAoI+OcyQ==}
     engines: {node: '>=12'}
     peerDependencies:
-      '@tanstack/react-router': ^1.95.2
+      '@tanstack/react-router': ^1.95.5
       react: '>=18'
       react-dom: '>=18'
 
@@ -4782,10 +4782,6 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.5.0:
     resolution: {integrity: sha512-27VKOqrYfPncKA2NrFOVhP5MGAfHKLYn/Q0mz9cNQyRAKYi3VNHwYU2qKKqPCqgBmeeJ0uAFB56NumXZ5ZReXg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -7319,10 +7315,10 @@ snapshots:
       picocolors: 1.1.1
       picomatch: 2.3.1
       pidtree: 0.6.0
-      postcss: 8.4.49
-      postcss-discard-duplicates: 5.1.0(postcss@8.4.49)
-      postcss-load-config: 4.0.2(postcss@8.4.49)
-      postcss-modules: 6.0.1(postcss@8.4.49)
+      postcss: 8.5.0
+      postcss-discard-duplicates: 5.1.0(postcss@8.5.0)
+      postcss-load-config: 4.0.2(postcss@8.5.0)
+      postcss-modules: 6.0.1(postcss@8.5.0)
       prettier: 2.8.8
       pretty-ms: 7.0.1
       react-refresh: 0.14.2
@@ -7636,7 +7632,7 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
       use-sync-external-store: 1.4.0(react@19.0.0)
 
-  '@tanstack/router-devtools@1.95.2(@tanstack/react-router@1.95.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(csstype@3.1.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@tanstack/router-devtools@1.95.5(@tanstack/react-router@1.95.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(csstype@3.1.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@tanstack/react-router': 1.95.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx: 2.1.1
@@ -9818,9 +9814,9 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icss-utils@5.1.0(postcss@8.4.49):
+  icss-utils@5.1.0(postcss@8.5.0):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.0
 
   ieee754@1.2.1: {}
 
@@ -11181,9 +11177,9 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-discard-duplicates@5.1.0(postcss@8.4.49):
+  postcss-discard-duplicates@5.1.0(postcss@8.5.0):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.0
 
   postcss-import@15.1.0(postcss@8.5.0):
     dependencies:
@@ -11197,13 +11193,6 @@ snapshots:
       camelcase-css: 2.0.1
       postcss: 8.5.0
 
-  postcss-load-config@4.0.2(postcss@8.4.49):
-    dependencies:
-      lilconfig: 3.1.3
-      yaml: 2.6.1
-    optionalDependencies:
-      postcss: 8.4.49
-
   postcss-load-config@4.0.2(postcss@8.5.0):
     dependencies:
       lilconfig: 3.1.3
@@ -11211,37 +11200,37 @@ snapshots:
     optionalDependencies:
       postcss: 8.5.0
 
-  postcss-modules-extract-imports@3.1.0(postcss@8.4.49):
+  postcss-modules-extract-imports@3.1.0(postcss@8.5.0):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.0
 
-  postcss-modules-local-by-default@4.2.0(postcss@8.4.49):
+  postcss-modules-local-by-default@4.2.0(postcss@8.5.0):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.49)
-      postcss: 8.4.49
+      icss-utils: 5.1.0(postcss@8.5.0)
+      postcss: 8.5.0
       postcss-selector-parser: 7.0.0
       postcss-value-parser: 4.2.0
 
-  postcss-modules-scope@3.2.1(postcss@8.4.49):
+  postcss-modules-scope@3.2.1(postcss@8.5.0):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.0
       postcss-selector-parser: 7.0.0
 
-  postcss-modules-values@4.0.0(postcss@8.4.49):
+  postcss-modules-values@4.0.0(postcss@8.5.0):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.49)
-      postcss: 8.4.49
+      icss-utils: 5.1.0(postcss@8.5.0)
+      postcss: 8.5.0
 
-  postcss-modules@6.0.1(postcss@8.4.49):
+  postcss-modules@6.0.1(postcss@8.5.0):
     dependencies:
       generic-names: 4.0.0
-      icss-utils: 5.1.0(postcss@8.4.49)
+      icss-utils: 5.1.0(postcss@8.5.0)
       lodash.camelcase: 4.3.0
-      postcss: 8.4.49
-      postcss-modules-extract-imports: 3.1.0(postcss@8.4.49)
-      postcss-modules-local-by-default: 4.2.0(postcss@8.4.49)
-      postcss-modules-scope: 3.2.1(postcss@8.4.49)
-      postcss-modules-values: 4.0.0(postcss@8.4.49)
+      postcss: 8.5.0
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.0)
+      postcss-modules-local-by-default: 4.2.0(postcss@8.5.0)
+      postcss-modules-scope: 3.2.1(postcss@8.5.0)
+      postcss-modules-values: 4.0.0(postcss@8.5.0)
       string-hash: 1.1.3
 
   postcss-nested@6.2.0(postcss@8.5.0):
@@ -11260,12 +11249,6 @@ snapshots:
       util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
-
-  postcss@8.4.49:
-    dependencies:
-      nanoid: 3.3.8
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.5.0:
     dependencies:
