@@ -28,7 +28,7 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.4",
     "@tanstack/react-query": "^5.64.0",
-    "@tanstack/react-query-devtools": "^5.63.0",
+    "@tanstack/react-query-devtools": "^5.64.0",
     "@tanstack/react-router": "^1.95.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
