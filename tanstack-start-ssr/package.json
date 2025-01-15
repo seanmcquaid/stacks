@@ -51,7 +51,7 @@
     "@eslint/js": "^9.18.0",
     "@faker-js/faker": "^9.3.0",
     "@tanstack/eslint-plugin-query": "^5.62.16",
-    "@tanstack/router-devtools": "^1.95.5",
+    "@tanstack/router-devtools": "^1.95.6",
     "@tanstack/router-plugin": "^1.95.6",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
