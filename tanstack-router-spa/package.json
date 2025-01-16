@@ -93,7 +93,7 @@
     "playwright-msw": "^3.0.1",
     "postcss": "^8.5.1",
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9",
+    "prettier-plugin-tailwindcss": "^0.6.10",
     "remix-flat-routes": "^0.6.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
