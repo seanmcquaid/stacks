@@ -53,7 +53,7 @@
     "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
-    "@faker-js/faker": "^9.3.0",
+    "@faker-js/faker": "^9.4.0",
     "@playwright/test": "^1.49.1",
     "@tanstack/eslint-plugin-query": "^5.62.16",
     "@tanstack/router-devtools": "^1.97.0",
