@@ -175,8 +175,8 @@ importers:
         specifier: ^26.0.0
         version: 26.0.0
       lint-staged:
-        specifier: ^15.4.0
-        version: 15.4.0
+        specifier: ^15.4.1
+        version: 15.4.1
       postcss:
         specifier: ^8.5.1
         version: 8.5.1
@@ -1727,9 +1727,6 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
-
-  '@types/node@22.10.6':
-    resolution: {integrity: sha512-qNiuwC4ZDAUNcY47xgaSuS92cjf8JbSUoaKS77bmLG1rU7MlATVSiw/IlrjtIyyskXBZ8KkNfjK/P5na7rgXbQ==}
 
   '@types/node@22.10.7':
     resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
@@ -3335,8 +3332,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@15.4.0:
-    resolution: {integrity: sha512-UdODqEZiQimd7rCzZ2vqFuELRNUda3mdv7M93jhE4SmDiqAj/w/msvwKgagH23jv2iCPw6Q5m+ltX4VlHvp2LQ==}
+  lint-staged@15.4.1:
+    resolution: {integrity: sha512-P8yJuVRyLrm5KxCtFx+gjI5Bil+wO7wnTl7C3bXhvtTaAFGirzeB24++D0wGoUwxrUKecNiehemgCob9YL39NA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -6234,10 +6231,6 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.10.6':
-    dependencies:
-      undici-types: 6.20.0
-
   '@types/node@22.10.7':
     dependencies:
       undici-types: 6.20.0
@@ -8022,7 +8015,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.10.6
+      '@types/node': 22.10.7
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -8117,7 +8110,7 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@15.4.0:
+  lint-staged@15.4.1:
     dependencies:
       chalk: 5.4.1
       commander: 12.1.0
