@@ -1,5 +1,5 @@
 import { createRoutesStub } from 'react-router';
-import KitchenSinkPage from '.';
+import KitchenSinkPage from '..';
 import {
   render,
   screen,
