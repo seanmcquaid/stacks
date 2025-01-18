@@ -2,7 +2,11 @@ import { createRoutesStub } from 'react-router';
 import KitchenSinkPage from '..';
 import { render, screen } from '@/utils/testing/reactTestingLibraryUtils';
 
-describe('Kitchen Sink Page', () => {
+describe('KitchenSinkPage', () => {
+  describe('clientAction', () => {
+    it('Returns errors if there is a validation error with the form data', () => {});
+    it('Returns data and calls the toast if there are no validation errors', () => {});
+  });
   it('Renders loader data', async () => {
     const RoutesStub = createRoutesStub([
       {
