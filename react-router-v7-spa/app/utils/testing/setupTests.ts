@@ -5,3 +5,5 @@ import server from '../../../mocks/server';
 beforeEach(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
+
+// Need to include mocking i18n
