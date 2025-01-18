@@ -1,10 +1,6 @@
 import { createRoutesStub } from 'react-router';
 import KitchenSinkPage from '..';
-import {
-  render,
-  screen,
-  waitFor,
-} from '@/utils/testing/reactTestingLibraryUtils';
+import { render, screen } from '@/utils/testing/reactTestingLibraryUtils';
 
 describe('Kitchen Sink Page', () => {
   it('Renders loader data', async () => {
@@ -26,6 +22,6 @@ describe('Kitchen Sink Page', () => {
 
     render(<RoutesStub />);
 
-    await waitFor(() => expect(screen.queryByText('Pos1')).toBeInTheDocument());
+    expect(screen.queryByText('Pos1')).toBeInTheDocument();
   });
 });
