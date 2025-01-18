@@ -21,18 +21,15 @@ const formDataSchema = z
     path: ['confirmPassword'],
   });
 
-type FormData = z.infer<typeof formDataSchema>;
-
-const resolver = zodResolver(formDataSchema);
-
 const ReactHookFormZodPage = () => {
   const {
     register,
     formState: { errors },
-  } = useForm<FormData>({
-    mode: 'onBlur',
-    resolver,
+  } = useForm<z.infer<typeof formDataSchema>>({
+    mode: 'all',
+    resolver: zodResolver(formDataSchema),
   });
+
   return (
     <PageWrapper>
       <form>

@@ -17,10 +17,6 @@ const formDataSchema = z.object({
   }),
 });
 
-type FormData = z.infer<typeof formDataSchema>;
-
-const resolver = zodResolver(formDataSchema);
-
 export const clientLoader = async () => {
   const posts = await queryClient.ensureQueryData(getPostsQueryOptions());
 
@@ -49,8 +45,8 @@ const KitchenSinkPage = ({ loaderData, actionData }: Route.ComponentProps) => {
   const {
     register,
     formState: { errors },
-  } = useForm<FormData>({
-    resolver,
+  } = useForm<z.infer<typeof formDataSchema>>({
+    resolver: zodResolver(formDataSchema),
     mode: 'onChange',
   });
 
