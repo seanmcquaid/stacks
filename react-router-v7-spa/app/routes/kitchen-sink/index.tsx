@@ -27,7 +27,6 @@ clientLoader.hydrate = true;
 
 export const clientAction = async ({ request }: Route.ClientActionArgs) => {
   const formData = await request.formData();
-  console.log(formData.entries());
   const { errors, data, defaultValues } = getValidatedFormData({
     formData,
     schema: formDataSchema,
