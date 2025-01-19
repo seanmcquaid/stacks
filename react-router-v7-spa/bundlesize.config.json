@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "path": "./build/client/assets/*.js",
+      "path": "./build/client/assets/!(worker)-**.js",
       "maxSize": "300 kB"
     }
   ]
