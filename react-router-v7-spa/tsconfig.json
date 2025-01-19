@@ -30,7 +30,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"]
+      "@/*": ["./app/*"],
+      "@/mocks/*": ["./mocks/*"]
     },
     "rootDirs": [".", "./.react-router/types"],
     "allowImportingTsExtensions": true,
