@@ -12,14 +12,15 @@ import getValidatedFormData from '@/utils/getValidatedFormData';
 import { getPostsQueryOptions } from '@/services/queries/posts';
 
 const formDataSchema = z.object({
-  name: z.string().min(3).max(10, {
-    message: 'Name must be between 3 and 10 characters',
-  }),
+  name: z
+    .string()
+    .min(3, {
+      message: 'Name must be between 3 and 10 characters',
+    })
+    .max(10, {
+      message: 'Name must be between 3 and 10 characters',
+    }),
 });
-
-type FormData = z.infer<typeof formDataSchema>;
-
-const resolver = zodResolver(formDataSchema);
 
 export const clientLoader = async () => {
   const posts = await queryClient.ensureQueryData(getPostsQueryOptions());
@@ -30,8 +31,9 @@ export const clientLoader = async () => {
 clientLoader.hydrate = true;
 
 export const clientAction = async ({ request }: Route.ClientActionArgs) => {
+  const formData = await request.formData();
   const { errors, data, defaultValues } = getValidatedFormData({
-    formData: await request.formData(),
+    formData,
     schema: formDataSchema,
   });
   if (errors) {
@@ -49,8 +51,8 @@ const KitchenSinkPage = ({ loaderData, actionData }: Route.ComponentProps) => {
   const {
     register,
     formState: { errors },
-  } = useForm<FormData>({
-    resolver,
+  } = useForm<z.infer<typeof formDataSchema>>({
+    resolver: zodResolver(formDataSchema),
     mode: 'onChange',
   });
 

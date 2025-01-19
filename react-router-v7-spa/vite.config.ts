@@ -29,12 +29,6 @@ const viteConfig = defineViteConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
-  build: {
-    rollupOptions: {
-      // This is to remove the MSW from ever being included in the production build
-      external: id => id.includes('worker'),
-    },
-  },
   preview: {
     port: 3000,
     open: true,
@@ -58,6 +52,8 @@ const vitestConfig = defineVitestConfig({
       include: ['app/**/*.ts', 'app/**/*.tsx'],
       exclude: [
         'app/utils/testing',
+        'app/entry.client.tsx',
+        'app/routes.ts',
         'app/i18n',
         'app/root.tsx',
         'app/env.ts',
