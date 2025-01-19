@@ -98,6 +98,8 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Run Unit Tests
         run: pnpm test:coverage
+      - name: Print dir
+        run: ls -la
       - uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
           path: './coverage/lcov.info'
