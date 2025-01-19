@@ -1,7 +1,12 @@
 import { createRoutesStub } from 'react-router';
+import userEvent from '@testing-library/user-event';
 import KitchenSinkPage, { clientAction } from '..';
 import type { Route } from '../+types';
-import { render, screen } from '@/utils/testing/reactTestingLibraryUtils';
+import {
+  render,
+  screen,
+  waitFor,
+} from '@/utils/testing/reactTestingLibraryUtils';
 
 describe('KitchenSinkPage', () => {
   describe('clientAction', () => {
@@ -60,5 +65,30 @@ describe('KitchenSinkPage', () => {
     render(<RoutesStub />);
 
     expect(screen.queryByText('Pos1')).toBeInTheDocument();
+  });
+  it('Displays an error message if the name is too short', async () => {
+    const user = userEvent.setup();
+    const RoutesStub = createRoutesStub([
+      {
+        path: '/',
+        Component: () => (
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
+          <KitchenSinkPage
+            loaderData={[
+              { id: 1, title: 'Pos1', userId: 1, body: 'Body 1' },
+              { id: 2, title: 'Post 2', userId: 2, body: 'Body 2' },
+            ]}
+          />
+        ),
+      },
+    ]);
+    render(<RoutesStub />);
+    await user.type(screen.getByLabelText('Name'), 'a');
+    await waitFor(() =>
+      expect(
+        screen.getByText('Name must be between 3 and 10 characters'),
+      ).toBeInTheDocument(),
+    );
   });
 });

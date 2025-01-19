@@ -12,9 +12,14 @@ import getValidatedFormData from '@/utils/getValidatedFormData';
 import { getPostsQueryOptions } from '@/services/queries/posts';
 
 const formDataSchema = z.object({
-  name: z.string().min(3).max(10, {
-    message: 'Name must be between 3 and 10 characters',
-  }),
+  name: z
+    .string()
+    .min(3, {
+      message: 'Name must be between 3 and 10 characters',
+    })
+    .max(10, {
+      message: 'Name must be between 3 and 10 characters',
+    }),
 });
 
 export const clientLoader = async () => {

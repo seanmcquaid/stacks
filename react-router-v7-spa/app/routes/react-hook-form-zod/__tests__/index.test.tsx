@@ -17,10 +17,8 @@ describe('ReactHookFormZodPage', () => {
       },
     ]);
     render(<RoutesStub />);
-    const passwordInput = screen.getByLabelText('Password');
-    const confirmPasswordInput = screen.getByLabelText('Confirm Password');
-    await user.type(passwordInput, 'password');
-    await user.type(confirmPasswordInput, 'password1');
+    await user.type(screen.getByLabelText('Password'), 'password');
+    await user.type(screen.getByLabelText('Confirm Password'), 'password1');
     await waitFor(() =>
       expect(screen.getByText('Passwords do not match')).toBeInTheDocument(),
     );
