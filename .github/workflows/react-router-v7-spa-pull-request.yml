@@ -99,10 +99,10 @@ jobs:
       - name: Run Unit Tests
         run: pnpm test:coverage
       - name: Print dir
-        run: ls -la
+        run: cd coverage && ls -la
       - uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
-          path: './coverage/lcov.info'
+          path: '/coverage/lcov.info'
           min_coverage: 80
   bundle-size:
     runs-on: ubuntu-latest
