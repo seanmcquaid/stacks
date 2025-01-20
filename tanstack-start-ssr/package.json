@@ -60,7 +60,7 @@
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/coverage-istanbul": "^3.0.1",
+    "@vitest/coverage-istanbul": "^3.0.2",
     "@vitest/eslint-plugin": "^1.1.25",
     "autoprefixer": "^10.4.20",
     "bundlesize": "^0.18.2",
@@ -94,7 +94,7 @@
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.1"
+    "vitest": "^3.0.2"
   },
   "msw": {
     "workerDirectory": [
