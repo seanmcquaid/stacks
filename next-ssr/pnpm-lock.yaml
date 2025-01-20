@@ -24,11 +24,11 @@ importers:
         specifier: ^1.2.4
         version: 1.2.4(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-query':
-        specifier: ^5.64.1
+        specifier: ^5.64.2
         version: 5.64.2(react@19.0.0)
       '@tanstack/react-query-next-experimental':
-        specifier: ^5.64.1
-        version: 5.64.2(@tanstack/react-query@5.64.2(react@19.0.0))(next@15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+        specifier: ^5.64.2
+        version: 5.64.2(@tanstack/react-query@5.64.2(react@19.0.0))(next@15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       accept-language:
         specifier: ^3.0.20
         version: 3.0.20
@@ -51,11 +51,11 @@ importers:
         specifier: ^1.7.4
         version: 1.7.4
       lucide-react:
-        specifier: ^0.471.1
-        version: 0.471.2(react@19.0.0)
+        specifier: ^0.473.0
+        version: 0.473.0(react@19.0.0)
       next:
         specifier: 15.1.5
-        version: 15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       next-plugin-svgr:
         specifier: ^1.1.12
         version: 1.1.12(typescript@5.7.3)(webpack@5.97.1)
@@ -91,13 +91,13 @@ importers:
         specifier: ^9.18.0
         version: 9.18.0
       '@next/eslint-plugin-next':
-        specifier: ^15.1.4
+        specifier: ^15.1.5
         version: 15.1.5
       '@tanstack/eslint-plugin-query':
         specifier: ^5.64.2
         version: 5.64.2(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3)
       '@tanstack/react-query-devtools':
-        specifier: ^5.64.1
+        specifier: ^5.64.2
         version: 5.64.2(@tanstack/react-query@5.64.2(react@19.0.0))(react@19.0.0)
       '@testing-library/jest-dom':
         specifier: ^6.6.3
@@ -118,14 +118,14 @@ importers:
         specifier: ^4.3.4
         version: 4.3.4(vite@6.0.10(@types/node@22.10.7)(jiti@1.21.7)(terser@5.37.0)(yaml@2.7.0))
       '@vitest/coverage-istanbul':
-        specifier: ^3.0.1
+        specifier: ^3.0.2
         version: 3.0.2(vitest@3.0.2(@types/node@22.10.7)(jiti@1.21.7)(jsdom@26.0.0)(terser@5.37.0)(yaml@2.7.0))
       '@vitest/eslint-plugin':
         specifier: ^1.1.25
         version: 1.1.25(@typescript-eslint/utils@8.21.0(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3)(vitest@3.0.2(@types/node@22.10.7)(jiti@1.21.7)(jsdom@26.0.0)(terser@5.37.0)(yaml@2.7.0))
       babel-plugin-react-compiler:
-        specifier: 19.0.0-beta-55955c9-20241229
-        version: 19.0.0-beta-55955c9-20241229
+        specifier: 19.0.0-beta-decd7b8-20250118
+        version: 19.0.0-beta-decd7b8-20250118
       bundlesize:
         specifier: ^0.18.2
         version: 0.18.2
@@ -157,8 +157,8 @@ importers:
         specifier: ^7.37.4
         version: 7.37.4(eslint@9.18.0(jiti@1.21.7))
       eslint-plugin-react-compiler:
-        specifier: 19.0.0-beta-55955c9-20241229
-        version: 19.0.0-beta-55955c9-20241229(eslint@9.18.0(jiti@1.21.7))
+        specifier: 19.0.0-beta-decd7b8-20250118
+        version: 19.0.0-beta-decd7b8-20250118(eslint@9.18.0(jiti@1.21.7))
       eslint-plugin-react-hooks:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.18.0(jiti@1.21.7))
@@ -193,10 +193,10 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       typescript-eslint:
-        specifier: ^8.20.0
+        specifier: ^8.21.0
         version: 8.21.0(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3)
       vitest:
-        specifier: ^3.0.1
+        specifier: ^3.0.2
         version: 3.0.2(@types/node@22.10.7)(jiti@1.21.7)(jsdom@26.0.0)(terser@5.37.0)(yaml@2.7.0)
 
 packages:
@@ -2084,8 +2084,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
 
-  babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229:
-    resolution: {integrity: sha512-APpa9fRiG5UN5kxnB/vznaSBKbXwAWZs6QshN3MLntzWa4cUhOxzUSd7Ohmr5sLQaM0ZHjjOg07pw1ZoR7+Oog==}
+  babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118:
+    resolution: {integrity: sha512-kymIdd5TmHnq1r2U2n26WI3ukadllV0o19kyrso4kByFE4KPOOXxE3uHibhwW77RPPptPx6ZqNfsZn3L/tm/Ew==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -2651,8 +2651,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-compiler@19.0.0-beta-55955c9-20241229:
-    resolution: {integrity: sha512-KsE6bQrNvtPDbMb9EolZ2C+Z2/uv2Y5cAUgN+pzbriXjKlf1FkbgiyE153m2mIT6gEZq2OrtFvX7uJj5IrNQlg==}
+  eslint-plugin-react-compiler@19.0.0-beta-decd7b8-20250118:
+    resolution: {integrity: sha512-qfs+Xo+VcYPbbVLI2tCP+KBGwm0oksAhjFJO1GwOvP+4b18LLcPZu7xopRhUTOaNd+nn1vOp9EQLZC1wMNxSrQ==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -3368,8 +3368,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@0.471.2:
-    resolution: {integrity: sha512-A8fDycQxGeaSOTaI7Bm4fg8LBXO7Qr9ORAX47bDRvugCsjLIliugQO0PkKFoeAD57LIQwlWKd3NIQ3J7hYp84g==}
+  lucide-react@0.473.0:
+    resolution: {integrity: sha512-KW6u5AKeIjkvrxXZ6WuCu9zHE/gEYSXCay+Gre2ZoInD0Je/e3RBtP4OHpJVJ40nDklSvjVKjgH7VU8/e2dzRw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -6156,10 +6156,10 @@ snapshots:
       '@tanstack/react-query': 5.64.2(react@19.0.0)
       react: 19.0.0
 
-  '@tanstack/react-query-next-experimental@5.64.2(@tanstack/react-query@5.64.2(react@19.0.0))(next@15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-query-next-experimental@5.64.2(@tanstack/react-query@5.64.2(react@19.0.0))(next@15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@tanstack/react-query': 5.64.2(react@19.0.0)
-      next: 15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next: 15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
 
   '@tanstack/react-query@5.64.2(react@19.0.0)':
@@ -6694,7 +6694,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229:
+  babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118:
     dependencies:
       '@babel/types': 7.26.5
 
@@ -7357,7 +7357,7 @@ snapshots:
       '@types/eslint': 9.6.1
       eslint-config-prettier: 10.0.1(eslint@9.18.0(jiti@1.21.7))
 
-  eslint-plugin-react-compiler@19.0.0-beta-55955c9-20241229(eslint@9.18.0(jiti@1.21.7)):
+  eslint-plugin-react-compiler@19.0.0-beta-decd7b8-20250118(eslint@9.18.0(jiti@1.21.7)):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/parser': 7.26.5
@@ -8161,7 +8161,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.471.2(react@19.0.0):
+  lucide-react@0.473.0(react@19.0.0):
     dependencies:
       react: 19.0.0
 
@@ -8251,7 +8251,7 @@ snapshots:
       - typescript
       - webpack
 
-  next@15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-55955c9-20241229)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.1.5(@babel/core@7.26.0)(babel-plugin-react-compiler@19.0.0-beta-decd7b8-20250118)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@next/env': 15.1.5
       '@swc/counter': 0.1.3
@@ -8271,7 +8271,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.1.5
       '@next/swc-win32-arm64-msvc': 15.1.5
       '@next/swc-win32-x64-msvc': 15.1.5
-      babel-plugin-react-compiler: 19.0.0-beta-55955c9-20241229
+      babel-plugin-react-compiler: 19.0.0-beta-decd7b8-20250118
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
