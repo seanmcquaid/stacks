@@ -18,7 +18,7 @@ jobs:
       - uses: ./.github/actions/setup-pull-request-job
       - name: Run Unit Tests
         run: pnpm test:coverage
-      - uses: VeryGoodOpenSource/very_good_coverage@v2
+      - uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
           path: './coverage/lcov.info'
           min_coverage: 80
