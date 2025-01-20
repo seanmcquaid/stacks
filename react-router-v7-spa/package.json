@@ -54,7 +54,7 @@
     "@playwright/test": "^1.49.1",
     "@react-router/dev": "^7.1.1",
     "@react-router/remix-routes-option-adapter": "^7.1.1",
-    "@tanstack/eslint-plugin-query": "^5.62.16",
+    "@tanstack/eslint-plugin-query": "^5.64.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.0",
