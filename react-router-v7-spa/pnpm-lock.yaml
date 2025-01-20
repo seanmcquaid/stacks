@@ -79,8 +79,8 @@ importers:
         version: 3.24.1
     devDependencies:
       '@anatine/zod-mock':
-        specifier: ^3.13.4
-        version: 3.13.4(@faker-js/faker@9.4.0)(zod@3.24.1)
+        specifier: ^3.13.5
+        version: 3.13.5(@faker-js/faker@9.4.0)(zod@3.24.1)
       '@axe-core/playwright':
         specifier: ^4.10.1
         version: 4.10.1(playwright-core@1.49.1)
@@ -269,8 +269,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@anatine/zod-mock@3.13.4':
-    resolution: {integrity: sha512-yO/KeuyYsEDCTcQ+7CiRuY3dnafMHIZUMok6Ci7aERRCTQ+/XmsiPk/RnMx5wlLmWBTmX9kw+PavbMsjM+sAJA==}
+  '@anatine/zod-mock@3.13.5':
+    resolution: {integrity: sha512-N08G3F1tdbvZypIqiTmyUgfiO6QZ7B8WbspnliY/kp/7hmQufFf9ML3tU1o9EWgasKIK9Z31GXLM8ezFnuuKpg==}
     peerDependencies:
       '@faker-js/faker': ^7.0.0 || ^8.0.0
       zod: ^3.21.4
@@ -6649,7 +6649,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@anatine/zod-mock@3.13.4(@faker-js/faker@9.4.0)(zod@3.24.1)':
+  '@anatine/zod-mock@3.13.5(@faker-js/faker@9.4.0)(zod@3.24.1)':
     dependencies:
       '@faker-js/faker': 9.4.0
       randexp: 0.5.3
