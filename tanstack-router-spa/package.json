@@ -57,7 +57,7 @@
     "@playwright/test": "^1.49.1",
     "@tanstack/eslint-plugin-query": "^5.64.2",
     "@tanstack/router-devtools": "^1.97.3",
-    "@tanstack/router-plugin": "^1.97.8",
+    "@tanstack/router-plugin": "^1.97.14",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
