@@ -226,8 +226,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react-router@7.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)(vite@6.0.11(@types/node@22.10.10)(jiti@1.21.7)(yaml@2.7.0))
       remix-flat-routes:
-        specifier: ^0.7.1
-        version: 0.7.1(react-router@7.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
+        specifier: ^0.7.2
+        version: 0.7.2(react-router@7.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -4577,11 +4577,14 @@ packages:
     resolution: {integrity: sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==}
     engines: {node: '>= 0.4'}
 
-  remix-flat-routes@0.7.1:
-    resolution: {integrity: sha512-LVIvHYUvil9Gu7hqpdsa57EUWpjvkGORUiQ8KO/22TZmkVkDpRR0jnnVTyBgaS8/LqVxarD4VUiiFwWXq87J8g==}
+  remix-flat-routes@0.7.2:
+    resolution: {integrity: sha512-xxIJxDLdHqRrq3Ojdmupvj21teLahnDBg7mQa5HP4VPn7aatkAV9QbX7xGMmcpkaSh/r7o5rqAkkUylNtPw23g==}
     hasBin: true
     peerDependencies:
       react-router: ^7
+    peerDependenciesMeta:
+      react-router:
+        optional: true
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -10347,10 +10350,11 @@ snapshots:
       gopd: 1.2.0
       set-function-name: 2.0.2
 
-  remix-flat-routes@0.7.1(react-router@7.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)):
+  remix-flat-routes@0.7.2(react-router@7.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)):
     dependencies:
       fs-extra: 11.3.0
       minimatch: 10.0.1
+    optionalDependencies:
       react-router: 7.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
   require-directory@2.1.1: {}
