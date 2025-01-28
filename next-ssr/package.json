@@ -44,7 +44,7 @@
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.19.0",
     "@next/eslint-plugin-next": "^15.1.6",
-    "@tanstack/eslint-plugin-query": "^5.64.2",
+    "@tanstack/eslint-plugin-query": "^5.65.0",
     "@tanstack/react-query-devtools": "^5.64.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
