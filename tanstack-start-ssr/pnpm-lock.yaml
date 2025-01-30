@@ -33,8 +33,8 @@ importers:
         specifier: ^1.98.3
         version: 1.98.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/react-router-with-query':
-        specifier: ^1.98.0
-        version: 1.98.0(@tanstack/react-query@5.65.1(react@19.0.0))(@tanstack/react-router@1.98.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^1.98.3
+        version: 1.98.3(@tanstack/react-query@5.65.1(react@19.0.0))(@tanstack/react-router@1.98.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/start':
         specifier: ^1.98.3
         version: 1.98.3(@types/node@22.12.0)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.11(@types/node@22.12.0)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
@@ -1745,8 +1745,8 @@ packages:
     peerDependencies:
       react: ^18 || ^19
 
-  '@tanstack/react-router-with-query@1.98.0':
-    resolution: {integrity: sha512-TsFxbmnglZY1S3544+Um71TfIuysaMVOsPfrerlSHWpNoJ//7fWQd5P2UkEMbvSwEzIZrF2AoaDvJPfLk4WqgA==}
+  '@tanstack/react-router-with-query@1.98.3':
+    resolution: {integrity: sha512-Gfr5NPRTzj8SJkDQTAvP/+kAjj06GeyW/0BizKTXnqIvb/BF5awvxUa8rjiT5DCIjJegNvuVOIhukMfFy8CL/g==}
     engines: {node: '>=12'}
     peerDependencies:
       '@tanstack/react-query': '>=5.49.2'
@@ -7393,7 +7393,7 @@ snapshots:
       '@tanstack/query-core': 5.65.0
       react: 19.0.0
 
-  '@tanstack/react-router-with-query@1.98.0(@tanstack/react-query@5.65.1(react@19.0.0))(@tanstack/react-router@1.98.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-router-with-query@1.98.3(@tanstack/react-query@5.65.1(react@19.0.0))(@tanstack/react-router@1.98.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@tanstack/react-query': 5.65.1(react@19.0.0)
       '@tanstack/react-router': 1.98.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
