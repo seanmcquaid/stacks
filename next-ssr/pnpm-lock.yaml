@@ -94,8 +94,8 @@ importers:
         specifier: ^15.1.6
         version: 15.1.6
       '@tanstack/eslint-plugin-query':
-        specifier: ^5.65.0
-        version: 5.65.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
+        specifier: ^5.66.0
+        version: 5.66.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
       '@tanstack/react-query-devtools':
         specifier: ^5.65.1
         version: 5.65.1(@tanstack/react-query@5.65.1(react@19.0.0))(react@19.0.0)
@@ -1670,8 +1670,8 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@tanstack/eslint-plugin-query@5.65.0':
-    resolution: {integrity: sha512-UpPtXcAZPHcoEJY8KFcBg/iS99DYGRfYwKo7BwTIJP0lfrdGEL5r2B8YyYERdXBYZfZUQuLgRdU++pD7dltx3g==}
+  '@tanstack/eslint-plugin-query@5.66.0':
+    resolution: {integrity: sha512-CzZhBxicLDuuSJbkZ4nPcuBqWnhLu72Zt9p/7qLQ93BepVnZJV6ZDlBLBuN5eg7YRACwECPLsntnwo1zuhgseQ==}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
@@ -4063,6 +4063,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   serialize-javascript@6.0.2:
     resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
 
@@ -6202,7 +6207,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@tanstack/eslint-plugin-query@5.65.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)':
+  '@tanstack/eslint-plugin-query@5.66.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/utils': 8.22.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
       eslint: 9.19.0(jiti@1.21.7)
@@ -6370,7 +6375,7 @@ snapshots:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.3
+      semver: 7.7.0
       ts-api-utils: 2.0.0(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -8865,6 +8870,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.6.3: {}
+
+  semver@7.7.0: {}
 
   serialize-javascript@6.0.2:
     dependencies:
