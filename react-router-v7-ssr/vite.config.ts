@@ -24,11 +24,6 @@ const viteConfig = defineViteConfig({
     svgr(),
     checker({ typescript: true }),
   ],
-  css: {
-    postcss: {
-      plugins: [tailwindcss, autoprefixer],
-    },
-  },
   build: {
     rollupOptions: {
       // This is to remove the MSW from ever being included in the production build
