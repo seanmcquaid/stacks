@@ -5,12 +5,12 @@ import checker from 'vite-plugin-checker';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { reactRouterDevTools } from 'react-router-devtools';
 import { defineConfig as defineVitestConfig } from 'vitest/config';
-import autoprefixer from 'autoprefixer';
-import tailwindcss from 'tailwindcss';
 import babel from 'vite-plugin-babel';
+import tailwindcss from '@tailwindcss/vite';
 
 const viteConfig = defineViteConfig({
   plugins: [
+    tailwindcss(),
     tsconfigPaths(),
     reactRouterDevTools(),
     !process.env.VITEST && reactRouter(),
