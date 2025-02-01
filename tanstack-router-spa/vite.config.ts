@@ -5,22 +5,17 @@ import svgr from 'vite-plugin-svgr';
 import checker from 'vite-plugin-checker';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig as defineVitestConfig } from 'vitest/config';
-import autoprefixer from 'autoprefixer';
-import tailwindcss from 'tailwindcss';
+import tailwindcss from '@tailwindcss/vite';
 
 const viteConfig = defineViteConfig({
   plugins: [
+    tailwindcss(),
     tsconfigPaths(),
     TanStackRouterVite(),
     react(),
     svgr(),
     checker({ typescript: true }),
   ],
-  css: {
-    postcss: {
-      plugins: [tailwindcss, autoprefixer],
-    },
-  },
   build: {
     rollupOptions: {
       // This is to remove the MSW from ever being included in the production build
