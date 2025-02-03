@@ -33,8 +33,8 @@ importers:
         specifier: ^5.66.0
         version: 5.66.0(react@19.0.0)
       '@tanstack/react-query-devtools':
-        specifier: ^5.65.1
-        version: 5.65.1(@tanstack/react-query@5.66.0(react@19.0.0))(react@19.0.0)
+        specifier: ^5.66.0
+        version: 5.66.0(@tanstack/react-query@5.66.0(react@19.0.0))(react@19.0.0)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -1824,10 +1824,10 @@ packages:
   '@tanstack/query-devtools@5.65.0':
     resolution: {integrity: sha512-g5y7zc07U9D3esMdqUfTEVu9kMHoIaVBsD0+M3LPdAdD710RpTcLiNvJY1JkYXqkq9+NV+CQoemVNpQPBXVsJg==}
 
-  '@tanstack/react-query-devtools@5.65.1':
-    resolution: {integrity: sha512-PKUBz7+FAP3eI1zoWrP5vxNQXs+elPz3u/3cILGhNZl2dufgbU9OJRpbC+BAptLXTsGxTwkAlrWBIZbD/c7CDw==}
+  '@tanstack/react-query-devtools@5.66.0':
+    resolution: {integrity: sha512-uB57wA2YZaQ2fPcFW0E9O1zAGDGSbRKRx84uMk/86VyU9jWVxvJ3Uzp+zNm+nZJYsuekCIo2opTdgNuvM3cKgA==}
     peerDependencies:
-      '@tanstack/react-query': ^5.65.1
+      '@tanstack/react-query': ^5.66.0
       react: ^18 || ^19
 
   '@tanstack/react-query@5.66.0':
@@ -7467,7 +7467,7 @@ snapshots:
 
   '@tanstack/query-devtools@5.65.0': {}
 
-  '@tanstack/react-query-devtools@5.65.1(@tanstack/react-query@5.66.0(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-query-devtools@5.66.0(@tanstack/react-query@5.66.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@tanstack/query-devtools': 5.65.0
       '@tanstack/react-query': 5.66.0(react@19.0.0)
