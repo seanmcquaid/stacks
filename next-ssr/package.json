@@ -44,7 +44,7 @@
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.19.0",
     "@next/eslint-plugin-next": "^15.1.6",
-    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.3",
     "@tanstack/eslint-plugin-query": "^5.66.0",
     "@tanstack/react-query-devtools": "^5.65.1",
     "@testing-library/jest-dom": "^6.6.3",
