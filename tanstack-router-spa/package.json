@@ -58,7 +58,7 @@
     "@tailwindcss/postcss": "^4.0.0",
     "@tailwindcss/vite": "^4.0.2",
     "@tanstack/eslint-plugin-query": "^5.66.0",
-    "@tanstack/router-devtools": "^1.98.3",
+    "@tanstack/router-devtools": "^1.98.4",
     "@tanstack/router-plugin": "^1.98.6",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
