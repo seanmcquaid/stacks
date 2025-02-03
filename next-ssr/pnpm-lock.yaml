@@ -160,8 +160,8 @@ importers:
         specifier: ^7.37.4
         version: 7.37.4(eslint@9.19.0(jiti@2.4.2))
       eslint-plugin-react-compiler:
-        specifier: 19.0.0-beta-27714ef-20250124
-        version: 19.0.0-beta-27714ef-20250124(eslint@9.19.0(jiti@2.4.2))
+        specifier: 19.0.0-beta-714736e-20250131
+        version: 19.0.0-beta-714736e-20250131(eslint@9.19.0(jiti@2.4.2))
       eslint-plugin-react-hooks:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.19.0(jiti@2.4.2))
@@ -2270,6 +2270,9 @@ packages:
   caniuse-lite@1.0.30001695:
     resolution: {integrity: sha512-vHyLade6wTgI2u1ec3WQBxv+2BrTERV28UXQu9LO6lZ9pYeMk34vjXFLOxo1A4UBA8XTL4njRQZdno/yYaSmWw==}
 
+  caniuse-lite@1.0.30001696:
+    resolution: {integrity: sha512-pDCPkvzfa39ehJtJ+OwGT/2yvT2SbjfHhiIW2LWOAcMQ7BzwxT/XuyUp4OTOd0XFWA6BKw0JalnBHgSi5DGJBQ==}
+
   chai@5.1.2:
     resolution: {integrity: sha512-aGtmf24DW6MLHHG5gCx4zaI3uBq3KRtxeVs0DjFH6Z0rDNbsvTxFASFvdj79pxjxZ8/5u3PIiN3IwEIQkiiuPw==}
     engines: {node: '>=12'}
@@ -2560,8 +2563,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.88:
-    resolution: {integrity: sha512-K3C2qf1o+bGzbilTDCTBhTQcMS9KW60yTAaTeeXsfvQuTDDwlokLam/AdqlqcSy9u4UainDgsHV23ksXAOgamw==}
+  electron-to-chromium@1.5.90:
+    resolution: {integrity: sha512-C3PN4aydfW91Natdyd449Kw+BzhLmof6tzy5W1pFC5SpQxVXT+oyiyOG9AgYYSN9OdA/ik3YkCrpwqI8ug5Tug==}
 
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
@@ -2712,8 +2715,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-compiler@19.0.0-beta-27714ef-20250124:
-    resolution: {integrity: sha512-8/NaV8E+eQ+BiKGeWg5wIizuKwEXLo+n/lgiyTLmJnZj8eoFW3G7NGJf3Nke4ji3Rndy34LK5Qi5TF6BPiZlSQ==}
+  eslint-plugin-react-compiler@19.0.0-beta-714736e-20250131:
+    resolution: {integrity: sha512-iTPUaHzvBejGqicSwZLCDBgWBxLzU1Dvqjs31loNoOPRnsey5dcOupaZajECKVvXmB1wcbIWNp6/VR5+dM9d6w==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -6888,8 +6891,8 @@ snapshots:
 
   browserslist@4.24.4:
     dependencies:
-      caniuse-lite: 1.0.30001695
-      electron-to-chromium: 1.5.88
+      caniuse-lite: 1.0.30001696
+      electron-to-chromium: 1.5.90
       node-releases: 2.0.19
       update-browserslist-db: 1.1.2(browserslist@4.24.4)
 
@@ -6955,6 +6958,8 @@ snapshots:
   camelcase@6.3.0: {}
 
   caniuse-lite@1.0.30001695: {}
+
+  caniuse-lite@1.0.30001696: {}
 
   chai@5.1.2:
     dependencies:
@@ -7239,7 +7244,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.88: {}
+  electron-to-chromium@1.5.90: {}
 
   emoji-regex@10.4.0: {}
 
@@ -7487,7 +7492,7 @@ snapshots:
       '@types/eslint': 9.6.1
       eslint-config-prettier: 10.0.1(eslint@9.19.0(jiti@2.4.2))
 
-  eslint-plugin-react-compiler@19.0.0-beta-27714ef-20250124(eslint@9.19.0(jiti@2.4.2)):
+  eslint-plugin-react-compiler@19.0.0-beta-714736e-20250131(eslint@9.19.0(jiti@2.4.2)):
     dependencies:
       '@babel/core': 7.26.7
       '@babel/parser': 7.26.7
@@ -8350,7 +8355,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.6.3
+      semver: 7.7.0
 
   math-intrinsics@1.1.0: {}
 
