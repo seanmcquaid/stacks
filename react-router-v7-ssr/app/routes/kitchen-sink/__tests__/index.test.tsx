@@ -9,7 +9,7 @@ import {
 } from '@/utils/testing/reactTestingLibraryUtils';
 
 describe('KitchenSinkPage', () => {
-  describe.skip('action', () => {
+  describe('action', () => {
     it('Returns errors if there is a validation error with the form data', async () => {
       const formData = new FormData();
       formData.append('name', 'a');
@@ -20,9 +20,9 @@ describe('KitchenSinkPage', () => {
         headers: new Headers(),
         method: 'POST',
       });
-      const result = await clientAction({
+      const result = await action({
         request,
-      } as Route.ClientActionArgs);
+      } as Route.ActionArgs);
       expect(result.errors).not.toBeUndefined();
       expect(result.defaultValues).toEqual({ name: 'a' });
       expect(result.data).toBeUndefined();
@@ -37,44 +37,33 @@ describe('KitchenSinkPage', () => {
         headers: new Headers(),
         method: 'POST',
       });
-      const result = await clientAction({
+      const result = await action({
         request,
-      } as Route.ClientActionArgs);
+      } as Route.ActionArgs);
       expect(result.errors).toBeUndefined();
       expect(result.defaultValues).toBeUndefined();
       expect(result.data).toEqual({ name: 'test' });
     });
   });
-  describe.skip('clientAction', () => {
+  describe('clientAction', () => {
     it('Returns errors if there is a validation error with the form data', async () => {
-      const formData = new FormData();
-      formData.append('name', 'a');
-      const headers = new Headers();
-      headers.set('Content-Type', 'application/x-www-form-urlencoded');
-      const request = new Request(new URL('http://localhost:3000'), {
-        body: formData,
-        headers: new Headers(),
-        method: 'POST',
-      });
       const result = await clientAction({
-        request,
+        serverAction: async () => ({
+          errors: { name: 'Name must be between 3 and 10 characters' },
+          defaultValues: { name: 'a' },
+        }),
       } as Route.ClientActionArgs);
       expect(result.errors).not.toBeUndefined();
       expect(result.defaultValues).toEqual({ name: 'a' });
       expect(result.data).toBeUndefined();
     });
     it('Returns data and calls the toast if there are no validation errors', async () => {
-      const formData = new FormData();
-      formData.append('name', 'test');
-      const headers = new Headers();
-      headers.set('Content-Type', 'application/x-www-form-urlencoded');
-      const request = new Request(new URL('http://localhost:3000'), {
-        body: formData,
-        headers: new Headers(),
-        method: 'POST',
-      });
       const result = await clientAction({
-        request,
+        serverAction: async () => ({
+          errors: undefined,
+          defaultValues: undefined,
+          data: { name: 'test' },
+        }),
       } as Route.ClientActionArgs);
       expect(result.errors).toBeUndefined();
       expect(result.defaultValues).toBeUndefined();
