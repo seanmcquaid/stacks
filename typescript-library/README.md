@@ -1,5 +1,3 @@
-# TypeScript Library Tempalte
+# TypeScript Library Template
 
 This template is a starting point for building a TypeScript library.
-
-Feel free to look at the docs for the template [here](./docs)
