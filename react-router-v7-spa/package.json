@@ -33,7 +33,7 @@
     "i18next-browser-languagedetector": "^8.0.2",
     "isbot": "^5.1.22",
     "ky": "^1.7.4",
-    "lucide-react": "^0.474.0",
+    "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
