@@ -92,7 +92,7 @@ importers:
     devDependencies:
       '@anatine/zod-mock':
         specifier: ^3.13.5
-        version: 3.13.5(@faker-js/faker@9.4.0)(zod@3.24.2)
+        version: 3.13.5(@faker-js/faker@9.5.0)(zod@3.24.2)
       '@babel/preset-typescript':
         specifier: ^7.26.0
         version: 7.26.0(@babel/core@7.26.8)
@@ -106,8 +106,8 @@ importers:
         specifier: ^9.20.0
         version: 9.20.0
       '@faker-js/faker':
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       '@tailwindcss/postcss':
         specifier: ^4.0.6
         version: 4.0.6
@@ -964,8 +964,8 @@ packages:
     resolution: {integrity: sha512-lB05FkqEdUg2AA0xEbUz0SnkXT1LcCTa438W4IWTUh4hdOnVbQyOJ81OrDXsJk/LSiJHubgGEFoR5EHq1NsH1A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@faker-js/faker@9.4.0':
-    resolution: {integrity: sha512-85+k0AxaZSTowL0gXp8zYWDIrWclTbRPg/pm/V0dSFZ6W6D4lhcG3uuZl4zLsEKfEvs69xDbLN2cHQudwp95JA==}
+  '@faker-js/faker@9.5.0':
+    resolution: {integrity: sha512-3qbjLv+fzuuCg3umxc9/7YjrEXNaKwHgmig949nfyaTx8eL4FAsvFbu+1JcFUj1YAXofhaDn6JdEUBTYuk0Ssw==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
   '@formatjs/ecma402-abstract@2.3.2':
@@ -6248,9 +6248,9 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@anatine/zod-mock@3.13.5(@faker-js/faker@9.4.0)(zod@3.24.2)':
+  '@anatine/zod-mock@3.13.5(@faker-js/faker@9.5.0)(zod@3.24.2)':
     dependencies:
-      '@faker-js/faker': 9.4.0
+      '@faker-js/faker': 9.5.0
       randexp: 0.5.3
       zod: 3.24.2
 
@@ -6823,7 +6823,7 @@ snapshots:
       '@eslint/core': 0.10.0
       levn: 0.4.1
 
-  '@faker-js/faker@9.4.0': {}
+  '@faker-js/faker@9.5.0': {}
 
   '@formatjs/ecma402-abstract@2.3.2':
     dependencies:
