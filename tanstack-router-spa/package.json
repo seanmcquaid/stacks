@@ -68,7 +68,7 @@
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^3.0.5",
-    "@vitest/eslint-plugin": "^1.1.28",
+    "@vitest/eslint-plugin": "^1.1.31",
     "autoprefixer": "^10.4.20",
     "bundlesize": "^0.18.2",
     "cross-env": "^7.0.3",
