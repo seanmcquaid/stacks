@@ -223,8 +223,8 @@ importers:
         specifier: ^0.6.11
         version: 0.6.11(prettier@3.5.1)
       remix-flat-routes:
-        specifier: ^0.8.4
-        version: 0.8.4
+        specifier: ^0.8.5
+        version: 0.8.5
       tailwindcss:
         specifier: ^4.0.6
         version: 4.0.6
@@ -5143,15 +5143,10 @@ packages:
     resolution: {integrity: sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==}
     engines: {node: '>= 0.4'}
 
-  remix-flat-routes@0.8.4:
-    resolution: {integrity: sha512-W+kwaICoFwzKS14j3bixoOGlQ2WZ3PNo18QGADpBGxjcXDfZAZ6OnHJT8SU2Q+/r83YPGvu4yijjIRlBcfokxA==}
+  remix-flat-routes@0.8.5:
+    resolution: {integrity: sha512-30GcEpvwqFXCyTKiCTeqI3QSNyTg+f0qLGeIc95y6o3gaOEIhbC37qWpe8HrVEkdnj48xUyaUK03jm1zYFkhfA==}
     engines: {node: '>=16.6.0'}
     hasBin: true
-    peerDependencies:
-      react-router: ^7
-    peerDependenciesMeta:
-      react-router:
-        optional: true
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -11913,7 +11908,7 @@ snapshots:
       gopd: 1.2.0
       set-function-name: 2.0.2
 
-  remix-flat-routes@0.8.4:
+  remix-flat-routes@0.8.5:
     dependencies:
       fs-extra: 11.3.0
       minimatch: 10.0.1
