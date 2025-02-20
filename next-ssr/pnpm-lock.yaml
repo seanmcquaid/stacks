@@ -76,7 +76,7 @@ importers:
         version: 3.0.1
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.0.6)
+        version: 1.0.7(tailwindcss@4.0.7)
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -190,8 +190,8 @@ importers:
         specifier: ^0.6.11
         version: 0.6.11(prettier@3.5.1)
       tailwindcss:
-        specifier: ^4.0.6
-        version: 4.0.6
+        specifier: ^4.0.7
+        version: 4.0.7
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -9380,9 +9380,9 @@ snapshots:
 
   tailwind-merge@3.0.1: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@4.0.6):
+  tailwindcss-animate@1.0.7(tailwindcss@4.0.7):
     dependencies:
-      tailwindcss: 4.0.6
+      tailwindcss: 4.0.7
 
   tailwindcss@4.0.6: {}
 
