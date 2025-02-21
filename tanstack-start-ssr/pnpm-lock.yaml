@@ -27,8 +27,8 @@ importers:
         specifier: ^5.66.7
         version: 5.66.7(react@19.0.0)
       '@tanstack/react-query-devtools':
-        specifier: ^5.66.6
-        version: 5.66.6(@tanstack/react-query@5.66.7(react@19.0.0))(react@19.0.0)
+        specifier: ^5.66.7
+        version: 5.66.7(@tanstack/react-query@5.66.7(react@19.0.0))(react@19.0.0)
       '@tanstack/react-router':
         specifier: ^1.106.0
         version: 1.106.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2000,10 +2000,10 @@ packages:
       react: '>=18.0.0 || >=19.0.0'
       react-dom: '>=18.0.0 || >=19.0.0'
 
-  '@tanstack/react-query-devtools@5.66.6':
-    resolution: {integrity: sha512-HKeLTxxeURdCHiPCfFIfK2Gh4GpGT6CtD+zg5s7dtui7ykFfPlv4B3weYVRIsFpXWItFZUpaTDUSb2yUM/k9Ww==}
+  '@tanstack/react-query-devtools@5.66.7':
+    resolution: {integrity: sha512-40z4PPkz06tYIF0vwLZZIZfZxKUH4OAaBOR14blCFyYm6hlU6qc+M82mkZ+D00HcEMhV7P4XeJiEuDhFq0q9Qw==}
     peerDependencies:
-      '@tanstack/react-query': ^5.66.6
+      '@tanstack/react-query': ^5.66.7
       react: ^18 || ^19
 
   '@tanstack/react-query@5.66.7':
@@ -7913,7 +7913,7 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@tanstack/react-query-devtools@5.66.6(@tanstack/react-query@5.66.7(react@19.0.0))(react@19.0.0)':
+  '@tanstack/react-query-devtools@5.66.7(@tanstack/react-query@5.66.7(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@tanstack/query-devtools': 5.65.0
       '@tanstack/react-query': 5.66.7(react@19.0.0)
