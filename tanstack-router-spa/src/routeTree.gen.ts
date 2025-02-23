@@ -15,6 +15,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Route as rootRoute } from './routes/__root'
 import { Route as KitchenSinkIndexImport } from './routes/kitchen-sink/index'
 import { Route as ReactQuerytestsIndexTestImport } from './routes/react-query/__tests__/index.test'
+import { Route as ReactQueryIdtestsIndexTestImport } from './routes/react-query/$id/__tests__/index.test'
 
 // Create Virtual Routes
 
@@ -69,6 +70,14 @@ const ReactQuerytestsIndexTestRoute = ReactQuerytestsIndexTestImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const ReactQueryIdtestsIndexTestRoute = ReactQueryIdtestsIndexTestImport.update(
+  {
+    id: '/react-query/$id/__tests__/index/test',
+    path: '/react-query/$id/index/test',
+    getParentRoute: () => rootRoute,
+  } as any,
+)
+
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
@@ -115,6 +124,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReactQuerytestsIndexTestImport
       parentRoute: typeof rootRoute
     }
+    '/react-query/$id/__tests__/index/test': {
+      id: '/react-query/$id/__tests__/index/test'
+      path: '/react-query/$id/index/test'
+      fullPath: '/react-query/$id/index/test'
+      preLoaderRoute: typeof ReactQueryIdtestsIndexTestImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -127,6 +143,7 @@ export interface FileRoutesByFullPath {
   '/react-query': typeof ReactQueryIndexLazyRoute
   '/react-query/$id': typeof ReactQueryIdIndexLazyRoute
   '/react-query/index/test': typeof ReactQuerytestsIndexTestRoute
+  '/react-query/$id/index/test': typeof ReactQueryIdtestsIndexTestRoute
 }
 
 export interface FileRoutesByTo {
@@ -136,6 +153,7 @@ export interface FileRoutesByTo {
   '/react-query': typeof ReactQueryIndexLazyRoute
   '/react-query/$id': typeof ReactQueryIdIndexLazyRoute
   '/react-query/index/test': typeof ReactQuerytestsIndexTestRoute
+  '/react-query/$id/index/test': typeof ReactQueryIdtestsIndexTestRoute
 }
 
 export interface FileRoutesById {
@@ -146,6 +164,7 @@ export interface FileRoutesById {
   '/react-query/': typeof ReactQueryIndexLazyRoute
   '/react-query/$id/': typeof ReactQueryIdIndexLazyRoute
   '/react-query/__tests__/index/test': typeof ReactQuerytestsIndexTestRoute
+  '/react-query/$id/__tests__/index/test': typeof ReactQueryIdtestsIndexTestRoute
 }
 
 export interface FileRouteTypes {
@@ -157,6 +176,7 @@ export interface FileRouteTypes {
     | '/react-query'
     | '/react-query/$id'
     | '/react-query/index/test'
+    | '/react-query/$id/index/test'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -165,6 +185,7 @@ export interface FileRouteTypes {
     | '/react-query'
     | '/react-query/$id'
     | '/react-query/index/test'
+    | '/react-query/$id/index/test'
   id:
     | '__root__'
     | '/'
@@ -173,6 +194,7 @@ export interface FileRouteTypes {
     | '/react-query/'
     | '/react-query/$id/'
     | '/react-query/__tests__/index/test'
+    | '/react-query/$id/__tests__/index/test'
   fileRoutesById: FileRoutesById
 }
 
@@ -183,6 +205,7 @@ export interface RootRouteChildren {
   ReactQueryIndexLazyRoute: typeof ReactQueryIndexLazyRoute
   ReactQueryIdIndexLazyRoute: typeof ReactQueryIdIndexLazyRoute
   ReactQuerytestsIndexTestRoute: typeof ReactQuerytestsIndexTestRoute
+  ReactQueryIdtestsIndexTestRoute: typeof ReactQueryIdtestsIndexTestRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -192,6 +215,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReactQueryIndexLazyRoute: ReactQueryIndexLazyRoute,
   ReactQueryIdIndexLazyRoute: ReactQueryIdIndexLazyRoute,
   ReactQuerytestsIndexTestRoute: ReactQuerytestsIndexTestRoute,
+  ReactQueryIdtestsIndexTestRoute: ReactQueryIdtestsIndexTestRoute,
 }
 
 export const routeTree = rootRoute
@@ -209,7 +233,8 @@ export const routeTree = rootRoute
         "/react-hook-form-zod/",
         "/react-query/",
         "/react-query/$id/",
-        "/react-query/__tests__/index/test"
+        "/react-query/__tests__/index/test",
+        "/react-query/$id/__tests__/index/test"
       ]
     },
     "/": {
@@ -229,6 +254,9 @@ export const routeTree = rootRoute
     },
     "/react-query/__tests__/index/test": {
       "filePath": "react-query/__tests__/index.test.tsx"
+    },
+    "/react-query/$id/__tests__/index/test": {
+      "filePath": "react-query/$id/__tests__/index.test.tsx"
     }
   }
 }
