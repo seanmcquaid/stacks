@@ -5,11 +5,11 @@ import {
   createRouter,
   RouterProvider,
 } from '@tanstack/react-router';
-import type { ReactElement } from 'react';
+import type { JSX } from 'react';
 
 interface RouteStub {
   path: string;
-  component: () => ReactElement;
+  component: () => JSX.Element;
   loader?: () => unknown;
 }
 
