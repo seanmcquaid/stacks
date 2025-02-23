@@ -1,4 +1,3 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {
   createBrowserHistory,
   createRootRoute,
@@ -7,8 +6,6 @@ import {
   RouterProvider,
 } from '@tanstack/react-router';
 import type { ReactElement } from 'react';
-
-const queryClient = new QueryClient();
 
 interface RouteStub {
   path: string;
@@ -31,20 +28,9 @@ const createRoutesStub = (routeStubs: RouteStub[]) => {
   const router = createRouter({
     routeTree,
     history,
-    context: {
-      queryClient,
-    },
-    defaultPreload: 'intent',
-    // Since we're using React Query, we don't want loader calls to ever be stale
-    // This will ensure that the loader is always called when the route is preloaded or visited
-    defaultPreloadStaleTime: 0,
   });
 
-  return () => (
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router as never} />
-    </QueryClientProvider>
-  );
+  return () => <RouterProvider router={router as never} />;
 };
 
 export default createRoutesStub;
