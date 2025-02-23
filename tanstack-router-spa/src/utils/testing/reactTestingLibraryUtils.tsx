@@ -9,6 +9,8 @@ import { Toaster } from '@/components/ui/Toaster';
 
 const queryClient = new QueryClient();
 
+export const getTestQueryClient = () => queryClient;
+
 const Wrapper = ({ children }: PropsWithChildren) => (
   <QueryClientProvider client={queryClient}>
     {children}

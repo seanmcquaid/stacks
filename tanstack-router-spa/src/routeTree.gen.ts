@@ -15,6 +15,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Route as rootRoute } from './routes/__root'
 import { Route as KitchenSinkIndexImport } from './routes/kitchen-sink/index'
 import { Route as ReactQuerytestsIndexTestImport } from './routes/react-query/__tests__/index.test'
+import { Route as ReactHookFormZodtestsIndexTestImport } from './routes/react-hook-form-zod/__tests__/index.test'
 import { Route as ReactQueryIdtestsIndexTestImport } from './routes/react-query/$id/__tests__/index.test'
 
 // Create Virtual Routes
@@ -70,6 +71,13 @@ const ReactQuerytestsIndexTestRoute = ReactQuerytestsIndexTestImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const ReactHookFormZodtestsIndexTestRoute =
+  ReactHookFormZodtestsIndexTestImport.update({
+    id: '/react-hook-form-zod/__tests__/index/test',
+    path: '/react-hook-form-zod/index/test',
+    getParentRoute: () => rootRoute,
+  } as any)
+
 const ReactQueryIdtestsIndexTestRoute = ReactQueryIdtestsIndexTestImport.update(
   {
     id: '/react-query/$id/__tests__/index/test',
@@ -117,6 +125,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReactQueryIdIndexLazyImport
       parentRoute: typeof rootRoute
     }
+    '/react-hook-form-zod/__tests__/index/test': {
+      id: '/react-hook-form-zod/__tests__/index/test'
+      path: '/react-hook-form-zod/index/test'
+      fullPath: '/react-hook-form-zod/index/test'
+      preLoaderRoute: typeof ReactHookFormZodtestsIndexTestImport
+      parentRoute: typeof rootRoute
+    }
     '/react-query/__tests__/index/test': {
       id: '/react-query/__tests__/index/test'
       path: '/react-query/index/test'
@@ -142,6 +157,7 @@ export interface FileRoutesByFullPath {
   '/react-hook-form-zod': typeof ReactHookFormZodIndexLazyRoute
   '/react-query': typeof ReactQueryIndexLazyRoute
   '/react-query/$id': typeof ReactQueryIdIndexLazyRoute
+  '/react-hook-form-zod/index/test': typeof ReactHookFormZodtestsIndexTestRoute
   '/react-query/index/test': typeof ReactQuerytestsIndexTestRoute
   '/react-query/$id/index/test': typeof ReactQueryIdtestsIndexTestRoute
 }
@@ -152,6 +168,7 @@ export interface FileRoutesByTo {
   '/react-hook-form-zod': typeof ReactHookFormZodIndexLazyRoute
   '/react-query': typeof ReactQueryIndexLazyRoute
   '/react-query/$id': typeof ReactQueryIdIndexLazyRoute
+  '/react-hook-form-zod/index/test': typeof ReactHookFormZodtestsIndexTestRoute
   '/react-query/index/test': typeof ReactQuerytestsIndexTestRoute
   '/react-query/$id/index/test': typeof ReactQueryIdtestsIndexTestRoute
 }
@@ -163,6 +180,7 @@ export interface FileRoutesById {
   '/react-hook-form-zod/': typeof ReactHookFormZodIndexLazyRoute
   '/react-query/': typeof ReactQueryIndexLazyRoute
   '/react-query/$id/': typeof ReactQueryIdIndexLazyRoute
+  '/react-hook-form-zod/__tests__/index/test': typeof ReactHookFormZodtestsIndexTestRoute
   '/react-query/__tests__/index/test': typeof ReactQuerytestsIndexTestRoute
   '/react-query/$id/__tests__/index/test': typeof ReactQueryIdtestsIndexTestRoute
 }
@@ -175,6 +193,7 @@ export interface FileRouteTypes {
     | '/react-hook-form-zod'
     | '/react-query'
     | '/react-query/$id'
+    | '/react-hook-form-zod/index/test'
     | '/react-query/index/test'
     | '/react-query/$id/index/test'
   fileRoutesByTo: FileRoutesByTo
@@ -184,6 +203,7 @@ export interface FileRouteTypes {
     | '/react-hook-form-zod'
     | '/react-query'
     | '/react-query/$id'
+    | '/react-hook-form-zod/index/test'
     | '/react-query/index/test'
     | '/react-query/$id/index/test'
   id:
@@ -193,6 +213,7 @@ export interface FileRouteTypes {
     | '/react-hook-form-zod/'
     | '/react-query/'
     | '/react-query/$id/'
+    | '/react-hook-form-zod/__tests__/index/test'
     | '/react-query/__tests__/index/test'
     | '/react-query/$id/__tests__/index/test'
   fileRoutesById: FileRoutesById
@@ -204,6 +225,7 @@ export interface RootRouteChildren {
   ReactHookFormZodIndexLazyRoute: typeof ReactHookFormZodIndexLazyRoute
   ReactQueryIndexLazyRoute: typeof ReactQueryIndexLazyRoute
   ReactQueryIdIndexLazyRoute: typeof ReactQueryIdIndexLazyRoute
+  ReactHookFormZodtestsIndexTestRoute: typeof ReactHookFormZodtestsIndexTestRoute
   ReactQuerytestsIndexTestRoute: typeof ReactQuerytestsIndexTestRoute
   ReactQueryIdtestsIndexTestRoute: typeof ReactQueryIdtestsIndexTestRoute
 }
@@ -214,6 +236,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReactHookFormZodIndexLazyRoute: ReactHookFormZodIndexLazyRoute,
   ReactQueryIndexLazyRoute: ReactQueryIndexLazyRoute,
   ReactQueryIdIndexLazyRoute: ReactQueryIdIndexLazyRoute,
+  ReactHookFormZodtestsIndexTestRoute: ReactHookFormZodtestsIndexTestRoute,
   ReactQuerytestsIndexTestRoute: ReactQuerytestsIndexTestRoute,
   ReactQueryIdtestsIndexTestRoute: ReactQueryIdtestsIndexTestRoute,
 }
@@ -233,6 +256,7 @@ export const routeTree = rootRoute
         "/react-hook-form-zod/",
         "/react-query/",
         "/react-query/$id/",
+        "/react-hook-form-zod/__tests__/index/test",
         "/react-query/__tests__/index/test",
         "/react-query/$id/__tests__/index/test"
       ]
@@ -251,6 +275,9 @@ export const routeTree = rootRoute
     },
     "/react-query/$id/": {
       "filePath": "react-query/$id/index.lazy.tsx"
+    },
+    "/react-hook-form-zod/__tests__/index/test": {
+      "filePath": "react-hook-form-zod/__tests__/index.test.tsx"
     },
     "/react-query/__tests__/index/test": {
       "filePath": "react-query/__tests__/index.test.tsx"
