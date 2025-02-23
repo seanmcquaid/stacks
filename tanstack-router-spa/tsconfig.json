@@ -21,7 +21,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/mocks/*": ["./mocks/*"]
     },
     "allowImportingTsExtensions": true,
 
